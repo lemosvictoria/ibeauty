@@ -5,20 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_tipo_cadastro.*
 
-class TipoCadastro : AppCompatActivity() {
+class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tipo_cadastro)
+        setContentView(R.layout.activity_login)
 
         ivVoltarTela.setOnClickListener {
-            val intencaoDeChamada = Intent(this, MainActivity::class.java)
+            val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
             startActivity(intencaoDeChamada)
         }
-
-        linkLogin.setOnClickListener {
-            val intencaoDeChamada = Intent(this, Login::class.java)
-            startActivity(intencaoDeChamada)
-        }
-
     }
 }
