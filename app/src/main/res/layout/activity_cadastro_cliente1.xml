@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bege"
-    tools:context=".Login">
+    tools:context=".CadastroCliente1"
+    android:background="@color/bege">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:id="@+id/ivLogo"
             android:layout_width="214dp"
             android:layout_height="70dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -29,7 +29,7 @@
             android:id="@+id/ivVoltarTela"
             android:layout_width="16dp"
             android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/titLogin"
+            app:layout_constraintBottom_toTopOf="@+id/titCadastro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,63 +38,107 @@
             app:srcCompat="@drawable/voltar" />
 
         <TextView
-            android:id="@+id/titLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/titCadastro"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/comfortaa"
-            android:text="Login"
-            android:textAlignment="center"
+            android:text="Insira seus dados pessoais"
+            android:textAlignment="textStart"
             android:textColor="#000000"
-            android:textSize="30sp"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/emailLogin"
+            android:id="@+id/tvNome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.523"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/titCadastro" />
 
         <EditText
-            android:id="@+id/senhaLogin"
+            android:id="@+id/tvEndereco"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
-            android:hint="Senha"
-            android:inputType="textPassword"
+            android:hint="Endereço"
+            android:inputType="textPostalAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/tvNome" />
 
-        <Button
-            android:id="@+id/btLogin"
+        <EditText
+            android:id="@+id/tvCep"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/custom_button_marrom2"
-            android:text="Login"
-            android:textColor="@android:color/white"
+            android:ems="10"
+            android:hint="CEP"
+            android:inputType="textPostalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEndereco" />
+
+        <EditText
+            android:id="@+id/tvDataDeNascimento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="Data de nascimento"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCep" />
+
+        <EditText
+            android:id="@+id/tvTelefone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataDeNascimento" />
+
+        <Button
+            android:id="@+id/btCadastroProx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_button_amarelo"
+            android:text="Próximo"
+            android:textColor="@color/marrom2"
+            app:layout_constraintBottom_toTopOf="@+id/ivLogo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTelefone" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
