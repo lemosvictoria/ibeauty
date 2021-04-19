@@ -20,6 +20,11 @@ class TipoCadastro : AppCompatActivity() {
             startActivity((intencaoDeChamada))
         }
 
+        btTipoProfissional.setOnClickListener {
+            val intencaoDeChamada = Intent(this, CadastroProfissional1::class.java)
+            startActivity((intencaoDeChamada))
+        }
+
         linkLogin.setOnClickListener {
             val intencaoDeChamada = Intent(this, Login::class.java)
             startActivity(intencaoDeChamada)

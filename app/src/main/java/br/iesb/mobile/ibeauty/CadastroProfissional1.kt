@@ -15,5 +15,10 @@ class CadastroProfissional1 : AppCompatActivity() {
             startActivity(intencaoChamada)
         }
 
+        btVoltarProf1.setOnClickListener {
+            val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
+            startActivity((intencaoDeChamada))
+        }
+
     }
 }
