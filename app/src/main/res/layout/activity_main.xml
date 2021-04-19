@@ -80,5 +80,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo2" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
