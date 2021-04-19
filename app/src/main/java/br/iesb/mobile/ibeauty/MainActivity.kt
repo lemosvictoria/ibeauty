@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         btIrPara.setOnClickListener {
             val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
             startActivity(intencaoDeChamada)
+
         }
     }
+
 }
