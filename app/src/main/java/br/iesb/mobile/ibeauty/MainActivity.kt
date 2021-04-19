@@ -10,11 +10,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btIrPara.setOnClickListener {
+        btCadastro.setOnClickListener {
             val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
             startActivity(intencaoDeChamada)
+        }
 
+        btLogin.setOnClickListener {
+            val intencaoDeChamada = Intent(this, Login::class.java)
+            startActivity(intencaoDeChamada)
         }
     }
-
 }

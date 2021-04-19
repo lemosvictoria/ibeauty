@@ -14,5 +14,10 @@ class CadastroProfissional2 : AppCompatActivity() {
             val intencaoChamada = Intent(this, CadastroProfissional1::class.java)
             startActivity(intencaoChamada)
         }
+
+        btCadastroProf2.setOnClickListener {
+            val intencaoDeChamada = Intent(this, Login::class.java)
+            startActivity((intencaoDeChamada))
+        }
     }
 }

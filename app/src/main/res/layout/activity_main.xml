@@ -45,29 +45,31 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/btLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="15dp"
-        android:background="@drawable/botao_marrom"
+        android:background="@drawable/custom_button_marrom2"
         android:text="@string/login"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/cadastro"
+        app:layout_constraintEnd_toStartOf="@+id/btCadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <Button
-        android:id="@+id/cadastro"
+        android:id="@+id/btCadastro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="30dp"
-        android:background="@drawable/botao_marrom1"
+        android:background="@drawable/custom_button_marrom1"
         android:text="Cadastro"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/login"
+        app:layout_constraintStart_toEndOf="@+id/btLogin"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <ImageView
