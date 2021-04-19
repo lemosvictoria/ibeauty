@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/bege"
     tools:context=".MainActivity">
-
+  
     <ImageView
         android:id="@+id/logo_sup"
         android:layout_width="0dp"
@@ -79,5 +79,6 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
