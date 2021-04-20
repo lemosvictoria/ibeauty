@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">ibeauty</string>
+    <string name="app_name" translatable="false">iBeauty</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
 </resources>
