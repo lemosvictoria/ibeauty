@@ -13,11 +13,6 @@ class CadastroCliente2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_cliente2)
 
-        btCadastrar.setOnClickListener {
-            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
-            startActivity(intencaoDeChamada)
-        }
-
         btVoltarTela.setOnClickListener {
             finish()
         }

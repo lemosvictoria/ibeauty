@@ -3,9 +3,10 @@ package br.iesb.mobile.ibeauty.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.iesb.mobile.ibeauty.R
 import android.widget.Toast
+import br.iesb.mobile.ibeauty.R
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_cadastro_cliente2.*
 import kotlinx.android.synthetic.main.activity_cadastro_profissional2.*
 
 class CadastroProfissional2 : AppCompatActivity() {
