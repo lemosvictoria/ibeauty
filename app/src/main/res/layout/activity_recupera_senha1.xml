@@ -57,7 +57,7 @@
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="E-mail"
@@ -65,17 +65,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+            app:layout_constraintTop_toBottomOf="@+id/tvSolicitaRedefinicao" />
 
         <Button
-            android:id="@+id/btSolicitarSenha"
+            android:id="@+id/btRecuperaSenha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/custom_button_rose"
-            android:text="Solicitar nova senha"
+            android:text="Recuperar Senha"
             android:textColor="@color/marrom2"
             app:layout_constraintBottom_toTopOf="@+id/ivLogo"
             app:layout_constraintEnd_toEndOf="parent"
@@ -83,19 +83,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao"
             app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/tvInfo"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="15dp"
-            android:text="Informe o usuário que você deseja redefinir a senha!"
-            android:textAlignment="textStart"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSolicitaRedefinicao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
