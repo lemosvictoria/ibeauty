@@ -1,8 +1,9 @@
-package br.iesb.mobile.ibeauty
+package br.iesb.mobile.ibeauty.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.activity_cadastro_profissional2.*
 
 class CadastroProfissional2 : AppCompatActivity() {
@@ -11,12 +12,11 @@ class CadastroProfissional2 : AppCompatActivity() {
         setContentView(R.layout.activity_cadastro_profissional2)
 
         btVoltarProf2.setOnClickListener {
-            val intencaoChamada = Intent(this, CadastroProfissional1::class.java)
-            startActivity(intencaoChamada)
+            finish()
         }
 
         btCadastroProf2.setOnClickListener {
-            val intencaoDeChamada = Intent(this, Login::class.java)
+            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity((intencaoDeChamada))
         }
     }

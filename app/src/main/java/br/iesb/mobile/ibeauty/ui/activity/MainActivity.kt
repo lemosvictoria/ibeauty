@@ -1,8 +1,9 @@
-package br.iesb.mobile.ibeauty
+package br.iesb.mobile.ibeauty.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btLogin.setOnClickListener {
-            val intencaoDeChamada = Intent(this, Login::class.java)
+            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
     }

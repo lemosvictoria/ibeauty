@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroCliente1"
+    tools:context=".ui.activity.CadastroCliente1"
     android:background="@color/bege">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/logoibeauty" />
 
         <ImageView
-            android:id="@+id/ivVoltarTela"
+            android:id="@+id/btVoltarTela"
             android:layout_width="16dp"
             android:layout_height="15dp"
             app:layout_constraintBottom_toTopOf="@+id/titCadastro"

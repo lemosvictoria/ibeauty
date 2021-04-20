@@ -1,18 +1,17 @@
-package br.iesb.mobile.ibeauty
+package br.iesb.mobile.ibeauty.ui.activity
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.activity_tipo_cadastro.*
 
-class Login : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        ivVoltarTela.setOnClickListener {
-            val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
-            startActivity(intencaoDeChamada)
+        btVoltarTela.setOnClickListener {
+            finish()
         }
     }
 }
