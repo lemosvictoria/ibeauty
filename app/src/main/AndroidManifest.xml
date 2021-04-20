@@ -9,12 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".HomeProfActivity"></activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".TesteGif" />
         <activity android:name=".CadastroCliente2" />
         <activity android:name=".CadastroCliente1" />
-        <activity android:name=".Login" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".TipoCadastro" />
         <activity android:name=".CadastroProfissional2" />
         <activity android:name=".CadastroProfissional1" />

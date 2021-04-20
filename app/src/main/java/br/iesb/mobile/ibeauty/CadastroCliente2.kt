@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_cadastro_cliente2.*
-import kotlinx.android.synthetic.main.activity_cadastro_cliente2.ivVoltarTela
-import kotlinx.android.synthetic.main.activity_tipo_cadastro.*
+import kotlinx.android.synthetic.main.activity_cadastro_cliente2.btVoltarTela
 
 class CadastroCliente2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +14,8 @@ class CadastroCliente2 : AppCompatActivity() {
         setContentView(R.layout.activity_cadastro_cliente2)
 
         //BT Voltar
-        ivVoltarTela.setOnClickListener {
-            val intencaoDeChamada = Intent(this, CadastroCliente1::class.java)
-            startActivity(intencaoDeChamada)
+        btVoltarTela.setOnClickListener {
+            finish()
         }
 
         //BT Cadastrar
@@ -42,7 +40,7 @@ class CadastroCliente2 : AppCompatActivity() {
 
         taskDeLogin.addOnCompleteListener { resultado ->
             if (resultado.isSuccessful) {
-                val intencaoDeChamada = Intent(this, Login::class.java)
+                val intencaoDeChamada = Intent(this, LoginActivity::class.java)
                 startActivity(intencaoDeChamada)
             } else {
                 Toast.makeText(this, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()

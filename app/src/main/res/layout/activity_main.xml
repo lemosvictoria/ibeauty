@@ -9,20 +9,20 @@
     tools:context=".MainActivity">
   
     <ImageView
-        android:id="@+id/logo_sup"
+        android:id="@+id/logoSup"
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginTop="35dp"
         android:layout_marginBottom="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/ivMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logoibeauty" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivMain"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="35dp"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_sup"
+        app:layout_constraintTop_toBottomOf="@+id/logoSup"
         app:srcCompat="@drawable/imagemibeauty" />
 
     <View
@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ivMain" />
 
     <Button
         android:id="@+id/btLogin"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logoInf"
         android:layout_width="135dp"
         android:layout_height="44dp"
         android:layout_marginStart="10dp"

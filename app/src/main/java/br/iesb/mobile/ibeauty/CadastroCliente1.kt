@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_cadastro_cliente1.*
-import kotlinx.android.synthetic.main.activity_cadastro_cliente1.ivVoltarTela
+import kotlinx.android.synthetic.main.activity_cadastro_cliente1.btVoltarTela
 import kotlinx.android.synthetic.main.activity_tipo_cadastro.*
 
 class CadastroCliente1 : AppCompatActivity() {
@@ -17,9 +17,8 @@ class CadastroCliente1 : AppCompatActivity() {
             startActivity(intencaoDeChamada)
         }
 
-        ivVoltarTela.setOnClickListener {
-            val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
-            startActivity(intencaoDeChamada)
+        btVoltarTela.setOnClickListener {
+            finish()
         }
     }
 }

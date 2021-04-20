@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_cadastro_cliente2.*
 import kotlinx.android.synthetic.main.activity_cadastro_profissional2.*
 
 class CadastroProfissional2 : AppCompatActivity() {
@@ -15,8 +14,7 @@ class CadastroProfissional2 : AppCompatActivity() {
 
         //BT Voltar
         btVoltarProf2.setOnClickListener {
-            val intencaoChamada = Intent(this, CadastroProfissional1::class.java)
-            startActivity(intencaoChamada)
+            finish()
         }
 
         //BT Cadastrar
@@ -41,7 +39,7 @@ class CadastroProfissional2 : AppCompatActivity() {
 
         taskDeLogin.addOnCompleteListener { resultado ->
             if (resultado.isSuccessful) {
-                val intencaoDeChamada = Intent(this, Login::class.java)
+                val intencaoDeChamada = Intent(this, LoginActivity::class.java)
                 startActivity(intencaoDeChamada)
             } else {
                 Toast.makeText(this, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()

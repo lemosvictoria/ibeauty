@@ -10,9 +10,8 @@ class TipoCadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tipo_cadastro)
 
-        ivVoltarTela.setOnClickListener {
-            val intencaoDeChamada = Intent(this, MainActivity::class.java)
-            startActivity(intencaoDeChamada)
+        btVoltarTela.setOnClickListener {
+            finish()
         }
 
         btTipoCliente.setOnClickListener {
@@ -26,7 +25,7 @@ class TipoCadastro : AppCompatActivity() {
         }
 
         linkLogin.setOnClickListener {
-            val intencaoDeChamada = Intent(this, Login::class.java)
+            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
 
