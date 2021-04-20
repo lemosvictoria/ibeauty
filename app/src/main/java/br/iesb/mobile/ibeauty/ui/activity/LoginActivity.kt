@@ -19,6 +19,12 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
+        //Bt redefinir senha
+        tvEsqueceuSenha.setOnClickListener {
+            val intencaoDeChamada = Intent(this, RecuperaSenha1Activity::class.java)
+            startActivity(intencaoDeChamada)
+        }
+
         //Autentica Firebase
         btLogin.setOnClickListener {
             val email = emailLogin.text.toString()

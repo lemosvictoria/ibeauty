@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bege"
-    tools:context=".ui.activity.LoginActivity">
+    tools:context=".ui.activity.RecuperaSenha1Activity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bege"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="38dp">
 
         <ImageView
             android:id="@+id/ivLogo"
@@ -29,7 +28,7 @@
             android:id="@+id/btVoltarTela"
             android:layout_width="16dp"
             android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/titLogin"
+            app:layout_constraintBottom_toTopOf="@+id/tvSolicitaRedefinicao"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,75 +37,65 @@
             app:srcCompat="@drawable/voltar" />
 
         <TextView
-            android:id="@+id/titLogin"
+            android:id="@+id/tvSolicitaRedefinicao"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/comfortaa"
-            android:text="Login"
+            android:text="Redefinição de senha"
             android:textAlignment="textStart"
             android:textColor="#000000"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/emailLogin"
+            android:id="@+id/tvEmailRecuperacao"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titLogin" />
-
-        <EditText
-            android:id="@+id/senhaLogin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Senha"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
 
         <Button
-            android:id="@+id/btLogin"
+            android:id="@+id/btSolicitarSenha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/custom_button_marrom2"
-            android:text="Login"
-            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button_rose"
+            android:text="Solicitar nova senha"
+            android:textColor="@color/marrom2"
+            app:layout_constraintBottom_toTopOf="@+id/ivLogo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/tvEsqueceuSenha"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:text="Esqueceu sua senha? Clique aqui para redefini-la!"
+            android:id="@+id/tvInfo"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:text="Informe o usuário que você deseja redefinir a senha!"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/tvSolicitaRedefinicao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

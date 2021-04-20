@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".ui.activity.RecuperaSenha1Activity"></activity>
+        <activity android:name=".ui.activity.RecuperaSenha2Activity" />
         <activity android:name=".ui.activity.HomeActivity" />
         <activity android:name=".ui.activity.CadastroCliente2" />
         <activity android:name=".ui.activity.CadastroCliente1" />
