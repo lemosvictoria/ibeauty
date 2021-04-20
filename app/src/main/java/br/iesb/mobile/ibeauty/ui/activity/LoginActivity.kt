@@ -1,9 +1,12 @@
 package br.iesb.mobile.ibeauty.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.iesb.mobile.ibeauty.R
-import kotlinx.android.synthetic.main.activity_tipo_cadastro.*
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +15,23 @@ class LoginActivity : AppCompatActivity() {
 
         btVoltarTela.setOnClickListener {
             finish()
+        }
+
+        //Autentica Firebase
+        btLogin.setOnClickListener {
+            val email = emailLogin.text.toString()
+            val password = senhaLogin.text.toString()
+            val auth = FirebaseAuth.getInstance()
+
+            val taskDeLogin = auth.signInWithEmailAndPassword(email, password)
+            taskDeLogin.addOnCompleteListener { resultado ->
+                if (resultado.isSuccessful){
+                    val irPraHome = Intent(this, HomeActivity::class.java)
+                    startActivity(irPraHome)
+                }else{
+                    Toast.makeText(this,"E-mail e/ou Senha Incorretos!", Toast.LENGTH_LONG).show()
+                }
+            }
         }
     }
 }

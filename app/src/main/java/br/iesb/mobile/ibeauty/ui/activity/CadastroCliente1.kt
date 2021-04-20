@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.activity_cadastro_cliente1.*
-import kotlinx.android.synthetic.main.activity_cadastro_cliente1.btVoltarTela
 
 class CadastroCliente1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
