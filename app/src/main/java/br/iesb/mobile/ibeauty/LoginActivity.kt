@@ -7,17 +7,16 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_tipo_cadastro.*
-import kotlinx.android.synthetic.main.activity_tipo_cadastro.ivVoltarTela
+import kotlinx.android.synthetic.main.activity_tipo_cadastro.btVoltarTela
 
-class Login : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
         //Bt Voltar
-        ivVoltarTela.setOnClickListener {
-            val intencaoDeChamada = Intent(this, TipoCadastro::class.java)
-            startActivity(intencaoDeChamada)
+        btVoltarTela.setOnClickListener {
+            finish()
         }
 
         //Autentica Firebase

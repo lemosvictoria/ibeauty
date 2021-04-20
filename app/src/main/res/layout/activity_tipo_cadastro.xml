@@ -16,12 +16,13 @@
 
         <TextView
             android:id="@+id/cadastro"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/comfortaa"
             android:text="Cadastro"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="#000000"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +82,7 @@
             app:srcCompat="@drawable/logoibeauty" />
 
         <ImageView
-            android:id="@+id/ivVoltarTela"
+            android:id="@+id/btVoltarTela"
             android:layout_width="16dp"
             android:layout_height="15dp"
             app:layout_constraintBottom_toTopOf="@+id/cadastro"

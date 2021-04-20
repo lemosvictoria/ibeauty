@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btLogin.setOnClickListener {
-            val intencaoDeChamada = Intent(this, Login::class.java)
+            val intencaoDeChamada = Intent(this, LoginActivity::class.java)
             startActivity(intencaoDeChamada)
         }
     }
