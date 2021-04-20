@@ -3,6 +3,9 @@ package br.iesb.mobile.ibeauty
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_cadastro_cliente2.*
 import kotlinx.android.synthetic.main.activity_cadastro_profissional2.*
 
 class CadastroProfissional2 : AppCompatActivity() {
@@ -10,14 +13,40 @@ class CadastroProfissional2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_profissional2)
 
+        //BT Voltar
         btVoltarProf2.setOnClickListener {
             val intencaoChamada = Intent(this, CadastroProfissional1::class.java)
             startActivity(intencaoChamada)
         }
 
+        //BT Cadastrar
         btCadastroProf2.setOnClickListener {
-            val intencaoDeChamada = Intent(this, Login::class.java)
-            startActivity((intencaoDeChamada))
+            cadastrar()
         }
     }
+
+    //Funcao Valida Cadastro Profissional
+    private fun cadastrar(){
+        val email = etEmail.text.toString()
+        val password = etPassword.text.toString()
+        val confirmaPass = etPassword2.text.toString()
+
+        if (password != confirmaPass){
+            Toast.makeText(this, "Senhas não conferem!", Toast.LENGTH_LONG).show()
+            return
+        }
+
+        val auth = FirebaseAuth.getInstance()
+        val taskDeLogin = auth.createUserWithEmailAndPassword(email, password)
+
+        taskDeLogin.addOnCompleteListener { resultado ->
+            if (resultado.isSuccessful) {
+                val intencaoDeChamada = Intent(this, Login::class.java)
+                startActivity(intencaoDeChamada)
+            } else {
+                Toast.makeText(this, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
 }
