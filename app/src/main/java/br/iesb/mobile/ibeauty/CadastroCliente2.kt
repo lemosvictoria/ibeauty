@@ -26,7 +26,7 @@ class CadastroCliente2 : AppCompatActivity() {
         }
     }
 
-    //Funcao Valida Cadastro
+    //Funcao Valida Cadastro Cliente
     private fun cadastrar(){
         val email = tvEmailCadastro.text.toString()
         val password = tvSenhaCadastro.text.toString()
