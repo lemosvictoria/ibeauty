@@ -1,9 +1,8 @@
-package br.iesb.mobile.ibeauty.ui.activity
+package br.iesb.mobile.ibeauty
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

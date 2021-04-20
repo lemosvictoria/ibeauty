@@ -9,16 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-
-        <activity android:name=".ui.activity.CadastroCliente2" />
-        <activity android:name=".ui.activity.CadastroCliente1" />
-        <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".ui.activity.TipoCadastro" />
-        <activity android:name=".ui.activity.CadastroProfissional2" />
-        <activity android:name=".ui.activity.CadastroProfissional1" />
-        <activity android:name=".ui.activity.HomeActivity"/>
-        <activity android:name=".ui.activity.MainActivity">
-
+        <activity android:name=".CadastroCliente2" />
+        <activity android:name=".CadastroCliente1" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".TipoCadastro" />
+        <activity android:name=".CadastroProfissional2" />
+        <activity android:name=".CadastroProfissional1" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

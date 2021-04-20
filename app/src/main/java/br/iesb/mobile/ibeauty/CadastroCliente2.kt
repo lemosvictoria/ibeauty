@@ -1,9 +1,8 @@
-package br.iesb.mobile.ibeauty.ui.activity
+package br.iesb.mobile.ibeauty
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.iesb.mobile.ibeauty.R
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_cadastro_cliente2.*
