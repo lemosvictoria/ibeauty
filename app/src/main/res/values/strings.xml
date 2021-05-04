@@ -2,4 +2,14 @@
     <string name="app_name" translatable="false">iBeauty</string>
     <string name="todo">TODO</string>
     <string name="login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="bt_onboarding">Vamos lá!</string>
+    <string name="titulo_onboarding_um">Os serviços de beleza presentes na sua região!</string>
+    <string name="subtitulo_onboarding_um">Pesquise os estabelecimentos mais próximos de você!</string>
+    <string name="titulo_onboarding_dois">Agendamento de serviços de forma rápida e prática!</string>
+    <string name="subtitulo_onboarding_dois">Solicite um horário com o estabelecimento de sua preferência!</string>
+    <string name="titulo_onboarding_tres">Estabelecimentos de beleza avaliados no nosso App!</string>
+    <string name="subtitulo_onboarding_tres">Tenha acesso às avaliações de outros clientes, no estabelecimento do seu interesse!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

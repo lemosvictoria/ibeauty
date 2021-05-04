@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bege"
-    tools:context=".ui.activity.MainActivity">
-  
+    tools:context=".ui.fragment.MainFragment">
+
     <ImageView
         android:id="@+id/logoSup"
         android:layout_width="0dp"

@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.CadastroCliente2"
-    android:background="@color/bege">
+    tools:context=".ui.fragment.ForgotFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bege"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="38dp">
 
         <ImageView
             android:id="@+id/ivLogo"
             android:layout_width="214dp"
             android:layout_height="70dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -29,7 +28,7 @@
             android:id="@+id/btVoltarTela"
             android:layout_width="16dp"
             android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/titCadastro2"
+            app:layout_constraintBottom_toTopOf="@+id/tvSolicitaRedefinicao"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,79 +37,52 @@
             app:srcCompat="@drawable/voltar" />
 
         <TextView
-            android:id="@+id/titCadastro2"
+            android:id="@+id/tvSolicitaRedefinicao"
             android:layout_width="0dp"
-            android:layout_height="53dp"
-            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/comfortaa"
-            android:text="Cadastro"
+            android:text="Redefinição de senha"
             android:textAlignment="textStart"
             android:textColor="#000000"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btCadastrar"
+        <EditText
+            android:id="@+id/tvEmailRecuperacao"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/custom_button_amarelo"
-            android:text="Cadastrar"
-            android:textColor="@color/marrom2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvConfirmarSenha" />
-
-        <EditText
-            android:id="@+id/tvEmailCadastro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="25dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titCadastro2" />
+            app:layout_constraintTop_toBottomOf="@+id/tvSolicitaRedefinicao" />
 
-        <EditText
-            android:id="@+id/tvSenhaCadastro"
+        <Button
+            android:id="@+id/btRecuperaSenha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Senha"
-            android:inputType="textPassword"
+            android:background="@drawable/custom_button_rose"
+            android:text="Recuperar Senha"
+            android:textColor="@color/marrom2"
+            app:layout_constraintBottom_toTopOf="@+id/ivLogo"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvEmailCadastro" />
-
-        <EditText
-            android:id="@+id/tvConfirmarSenha"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Confirmar senha"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSenhaCadastro" />
-
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

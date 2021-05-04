@@ -1,22 +1,34 @@
-package br.iesb.mobile.ibeauty.ui.activity
+package br.iesb.mobile.ibeauty.ui.fragment
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import br.iesb.mobile.ibeauty.R
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_cadastro_cliente2.*
-import kotlinx.android.synthetic.main.activity_cadastro_cliente2.btVoltarTela
+import kotlinx.android.synthetic.main.fragment_cadastro_cliente_dois.*
 
-class CadastroCliente2 : AppCompatActivity() {
+class CadastroClienteDoisFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cadastro_cliente2)
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_cadastro_cliente_dois, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         //BT Voltar
         btVoltarTela.setOnClickListener {
-            finish()
+            activity?.finish()
         }
 
         //BT Cadastrar
@@ -32,7 +44,7 @@ class CadastroCliente2 : AppCompatActivity() {
         val confirmaPass = tvConfirmarSenha.text.toString()
 
         if (password != confirmaPass){
-            Toast.makeText(this, "Senhas não conferem!", Toast.LENGTH_LONG).show()
+            Toast.makeText(activity, "Senhas não conferem!", Toast.LENGTH_LONG).show()
             return
         }
 
@@ -41,11 +53,12 @@ class CadastroCliente2 : AppCompatActivity() {
 
         taskDeLogin.addOnCompleteListener { resultado ->
             if (resultado.isSuccessful) {
-                val intencaoDeChamada = Intent(this, LoginActivity::class.java)
-                startActivity(intencaoDeChamada)
+                //terminar navegação
+
             } else {
-                Toast.makeText(this, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()
+                Toast.makeText(activity, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()
             }
         }
     }
+
 }

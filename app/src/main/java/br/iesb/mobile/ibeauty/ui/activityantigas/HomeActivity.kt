@@ -1,4 +1,4 @@
-package br.iesb.mobile.ibeauty.ui.activity
+package br.iesb.mobile.ibeauty.ui.activityantigas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
