@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.CadastroCliente1"
+    tools:context=".ui.fragment.CadastroClienteDoisFragment"
     android:background="@color/bege">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +29,7 @@
             android:id="@+id/btVoltarTela"
             android:layout_width="16dp"
             android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/titCadastro"
+            app:layout_constraintBottom_toTopOf="@+id/titCadastro2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,106 +38,77 @@
             app:srcCompat="@drawable/voltar" />
 
         <TextView
-            android:id="@+id/titCadastro"
+            android:id="@+id/titCadastro2"
             android:layout_width="0dp"
-            android:layout_height="39dp"
-            android:layout_marginStart="12dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/comfortaa"
-            android:text="Insira seus dados pessoais"
+            android:text="Cadastro"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/tvNome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="#3C3F41"
-            android:ems="10"
-            android:hint="Nome Completo"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titCadastro" />
-
-        <EditText
-            android:id="@+id/tvEndereco"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Endereço"
-            android:inputType="textPostalAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNome" />
-
-        <EditText
-            android:id="@+id/tvCep"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="CEP"
-            android:inputType="textPostalAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvEndereco" />
-
-        <EditText
-            android:id="@+id/tvDataDeNascimento"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Data de nascimento"
-            android:inputType="date"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvCep" />
-
-        <EditText
-            android:id="@+id/tvTelefone"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Telefone"
-            android:inputType="phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDataDeNascimento" />
-
         <Button
-            android:id="@+id/btCadastroProx"
+            android:id="@+id/btCadastrar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/custom_button_amarelo"
-            android:text="Próximo"
+            android:text="Cadastrar"
             android:textColor="@color/marrom2"
-            app:layout_constraintBottom_toTopOf="@+id/ivLogo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTelefone" />
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmarSenha" />
+
+        <EditText
+            android:id="@+id/tvEmailCadastro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titCadastro2" />
+
+        <EditText
+            android:id="@+id/tvSenhaCadastro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailCadastro" />
+
+        <EditText
+            android:id="@+id/tvConfirmarSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSenhaCadastro" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
