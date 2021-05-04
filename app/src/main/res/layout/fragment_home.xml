@@ -5,7 +5,7 @@
     android:id="@+id/telaHomeClient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activityantigas.HomeActivity">
+    tools:context=".ui.fragment.HomeFragment">
 
     <TextView
         android:id="@+id/textView"
