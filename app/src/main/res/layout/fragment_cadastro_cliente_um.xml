@@ -44,7 +44,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/comfortaa"
-            android:text="Insira seus dados pessoais"
+            android:text="Insira seus dados pessoais:"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="24sp"
