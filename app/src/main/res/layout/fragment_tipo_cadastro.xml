@@ -32,14 +32,12 @@
 
         <Button
             android:id="@+id/btTipoProfissional"
+            style="?botaoMarromClaro"
             android:layout_width="0dp"
-            android:layout_height="56dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/custom_button_marrom1"
             android:text="SOU UM(A) PROFISSIONAL"
-            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,14 +45,12 @@
 
         <Button
             android:id="@+id/btTipoCliente"
+            style="?botaoAmarelo"
             android:layout_width="0dp"
-            android:layout_height="56dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/custom_button_amarelo"
             android:text="SOU UM(A) CLIENTE"
-            android:textColor="@color/marrom2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"

@@ -46,13 +46,11 @@
 
     <Button
         android:id="@+id/btLogin"
+        style="?botaoMarromEscuro"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="15dp"
-        android:background="@drawable/custom_button_marrom2"
         android:text="@string/login"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/btCadastro"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,13 +58,11 @@
 
     <Button
         android:id="@+id/btCadastro"
+        style="?botaoMarromClaro"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="30dp"
-        android:background="@drawable/custom_button_marrom1"
         android:text="Cadastro"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btLogin"
