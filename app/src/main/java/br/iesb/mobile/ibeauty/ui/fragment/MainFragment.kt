@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.fragment_main.*
 
@@ -30,7 +31,11 @@ class MainFragment : Fragment() {
         }
 
         btLogin.setOnClickListener {
-            //terminar navegação
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento Principal")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
     }
 }

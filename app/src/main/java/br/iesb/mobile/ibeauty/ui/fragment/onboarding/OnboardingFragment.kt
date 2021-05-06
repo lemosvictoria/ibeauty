@@ -6,12 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentOnboardingBinding
+import br.iesb.mobile.ibeauty.ui.fragment.MainFragment
 import br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingFirstFragment
 import br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingSecondFragment
 import br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingThirdFragment
+import kotlinx.android.synthetic.main.fragment_onboarding.*
 
 class OnboardingFragment : Fragment() {
 
@@ -24,9 +28,9 @@ class OnboardingFragment : Fragment() {
         binding.lifecycleOwner = this
 
         val listaFragmentos = listOf(
-            OnboardingFirstFragment(),
-            OnboardingSecondFragment(),
-            OnboardingThirdFragment()
+                OnboardingFirstFragment(),
+                OnboardingSecondFragment(),
+                OnboardingThirdFragment()
         )
 
         val adaptador = AdaptadorConversacao(listaFragmentos, requireActivity().supportFragmentManager, lifecycle)
@@ -36,15 +40,26 @@ class OnboardingFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        btOnboarding.setOnClickListener {
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento Principal")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
+        }
+    }
+
     //terminar navegação botão "vamos lá"
 
 }
 
 class AdaptadorConversacao(
-    val listaFragmentos: List<Fragment>,
-    fragmentManager: FragmentManager,
-    lifecycle: Lifecycle) :
-    FragmentStateAdapter(fragmentManager, lifecycle){
+        val listaFragmentos: List<Fragment>,
+        fragmentManager: FragmentManager,
+        lifecycle: Lifecycle) :
+        FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount() = listaFragmentos.size
     override fun createFragment(position: Int) = listaFragmentos[position]
