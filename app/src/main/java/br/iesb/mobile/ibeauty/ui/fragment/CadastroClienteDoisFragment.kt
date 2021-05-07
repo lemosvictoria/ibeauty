@@ -6,14 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_cadastro_cliente_dois.*
 
 class CadastroClienteDoisFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,7 +26,11 @@ class CadastroClienteDoisFragment : Fragment() {
 
         //BT Voltar
         btVoltarTela.setOnClickListener {
-            activity?.finish()
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, CadastroClienteUmFragment(), "Fragmento cliente parte 2")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
 
         //BT Cadastrar
@@ -53,12 +55,15 @@ class CadastroClienteDoisFragment : Fragment() {
 
         taskDeLogin.addOnCompleteListener { resultado ->
             if (resultado.isSuccessful) {
-                //terminar navegação
+                activity?.supportFragmentManager
+                        ?.beginTransaction()
+                        ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento cliente parte 2")
+                        ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                        ?.commit()
 
             } else {
                 Toast.makeText(activity, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()
             }
         }
     }
-
 }

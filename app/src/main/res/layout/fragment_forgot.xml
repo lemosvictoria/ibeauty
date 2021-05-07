@@ -59,6 +59,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
+            android:backgroundTint="#3C3F41"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
@@ -72,15 +73,13 @@
             style="?botaoRose"
             android:layout_width="0dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:text="Recuperar Senha"
-            app:layout_constraintBottom_toTopOf="@+id/ivLogo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

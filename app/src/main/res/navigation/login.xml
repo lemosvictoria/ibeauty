@@ -22,7 +22,6 @@
         android:name="br.iesb.mobile.ibeauty.ui.fragment.onboarding.OnboardingFragment"
         android:label="fragment_onboarding"
         tools:layout="@layout/fragment_onboarding">
-
         <action
             android:id="@+id/action_onboardingFragment_to_mainFragment"
             app:destination="@id/mainFragment"/>
@@ -32,7 +31,107 @@
         android:id="@+id/mainFragment"
         android:name="br.iesb.mobile.ibeauty.ui.fragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main">
+    <action
+        android:id="@+id/action_mainFragment_to_loginFragment"
+        app:destination="@id/loginFragment" />
 
+    <action
+        android:id="@+id/action_mainFragment_to_tipoCadastroFragment"
+        app:destination="@id/tipoCadastroFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFrament_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+        <action
+            android:id="@+id/action_loginFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/tipoCadastroFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.TipoCadastroFragment"
+        android:label="fragment_tipo_cadastro"
+        tools:layout="@layout/fragment_tipo_cadastro">
+
+        <action
+            android:id="@+id/action_tipoCadastroFragment_to_cadastroClienteUmFragment"
+            app:destination="@id/cadastroClienteUmFragment"/>
+
+        <action
+            android:id="@+id/action_tipoCadastroFragment_to_cadastroProfissionalUmFragment"
+            app:destination="@id/cadastroProfissionalUmFragment"/>
+
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroClienteUmFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroClienteUmFragment"
+        android:label="fragment_cadastro_cliente_um"
+        tools:layout="@layout/fragment_cadastro_cliente_um">
+
+        <action
+            android:id="@+id/action_cadastroClienteUmFragment_to_cadastroClienteDoisFragment"
+            app:destination="@id/cadastroClienteDoisFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroClienteDoisFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroClienteDoisFragment"
+        android:label="fragment_cadastro_cliente_dois"
+        tools:layout="@layout/fragment_cadastro_cliente_dois">
+        <action
+            android:id="@+id/action_cadastroClienteDoisFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroProfissionalUmFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroProfissionalUmFragment"
+        android:label="fragment_cadastro_profissional_um"
+        tools:layout="@layout/fragment_cadastro_profissional_um">
+
+        <action
+            android:id="@+id/action_cadastroProfissionalUmFragment_to_cadastroProfissionalDoisFragment"
+            app:destination="@id/cadastroProfissionalDoisFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroProfissionalDoisFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroProfissionalDoisFragment"
+        android:label="fragment_cadastro_profissional_dois"
+        tools:layout="@layout/fragment_cadastro_profissional_dois">
+        <action
+            android:id="@+id/action_cadastroProfissionalDoisFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.ForgotFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot">
+        <action
+            android:id="@+id/action_forgotFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 
 </navigation>

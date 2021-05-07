@@ -1,12 +1,15 @@
 package br.iesb.mobile.ibeauty.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.ui.activity.AppActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_login.*
 
@@ -29,12 +32,20 @@ class LoginFragment : Fragment() {
 
         //Bt Voltar
         btVoltarTela.setOnClickListener {
-            activity?.finish()
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento de login")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
 
         //Bt redefinir senha
         tvEsqueceuSenha.setOnClickListener {
-            //terminar navegação
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, ForgotFragment(), "Fragmento de login")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
 
         //Autentica Firebase
@@ -46,7 +57,8 @@ class LoginFragment : Fragment() {
             val taskDeLogin = auth.signInWithEmailAndPassword(email, password)
             taskDeLogin.addOnCompleteListener { resultado ->
                 if (resultado.isSuccessful){
-                    //terminar navegação
+                    val intencaoDeChamada = Intent(activity, AppActivity::class.java)
+                    activity?.startActivity(intencaoDeChamada)
                 }else{
                     Toast.makeText(activity,"E-mail e/ou Senha Incorretos!", Toast.LENGTH_LONG).show()
                 }

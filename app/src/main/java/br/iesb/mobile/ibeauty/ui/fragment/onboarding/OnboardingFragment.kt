@@ -6,12 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentOnboardingBinding
+import br.iesb.mobile.ibeauty.ui.fragment.MainFragment
 import br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingFirstFragment
 import br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingSecondFragment
 import br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingThirdFragment
+import kotlinx.android.synthetic.main.fragment_onboarding.*
 
 class OnboardingFragment : Fragment() {
 
@@ -36,7 +40,18 @@ class OnboardingFragment : Fragment() {
         return binding.root
     }
 
-    //terminar navegação botão "vamos lá"
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        btOnboarding.setOnClickListener {
+            activity?.supportFragmentManager
+                ?.beginTransaction()
+                ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento Principal")
+                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.commit()
+        }
+
+    }
 
 }
 
