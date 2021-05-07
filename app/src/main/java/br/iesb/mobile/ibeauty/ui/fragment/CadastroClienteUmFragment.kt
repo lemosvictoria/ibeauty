@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
 import kotlinx.android.synthetic.main.fragment_cadastro_cliente_um.*
+import kotlinx.android.synthetic.main.fragment_cadastro_profissional_um.*
 
 class CadastroClienteUmFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +27,19 @@ class CadastroClienteUmFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btCadastroProx.setOnClickListener {
-            //terminar navegação
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, CadastroClienteDoisFragment(), "Fragmento de cadastro cliente")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
 
         btVoltarTela.setOnClickListener {
-            activity?.finish()
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, TipoCadastroFragment(), "Fragmento de cadastro cliente")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
     }
 

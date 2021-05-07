@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_forgot.*
@@ -34,11 +35,23 @@ class ForgotFragment : Fragment() {
 
             Toast.makeText(activity, "Aguarde, em instantes você receberá um e-mail para recuperação de senha!", Toast.LENGTH_LONG).show()
             auth.sendPasswordResetEmail(email)
-            activity?.finish()
+
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento recuperação de senha")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
 
         btVoltarTela.setOnClickListener {
-            activity?.finish()
+            activity?.supportFragmentManager
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento recuperação de senha")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
         }
+
+
     }
+
 }

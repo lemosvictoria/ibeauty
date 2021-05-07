@@ -37,6 +37,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
+            android:backgroundTint="#3C3F41"
             android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
@@ -51,6 +52,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
+            android:backgroundTint="#3C3F41"
             android:ems="10"
             android:hint="@string/senha"
             android:inputType="textPassword"
@@ -65,6 +67,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
+            android:backgroundTint="#3C3F41"
             android:ems="10"
             android:hint="Confirmar senha"
             android:inputType="textPassword"
@@ -77,15 +80,13 @@
             style="?botaoMarromClaro"
             android:layout_width="0dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
             android:text="Cadastrar"
-            app:layout_constraintBottom_toTopOf="@+id/ivLogoCadastroProf2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPassword2"
-            app:layout_constraintVertical_bias="0.203" />
+            app:layout_constraintTop_toBottomOf="@+id/etPassword2" />
 
         <ImageView
             android:id="@+id/ivLogoCadastroProf2"
