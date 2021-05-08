@@ -11,5 +11,6 @@
     <string name="subtitulo_onboarding_dois">Solicite um horário com o estabelecimento de sua preferência!</string>
     <string name="titulo_onboarding_tres">Estabelecimentos de beleza avaliados no nosso App!</string>
     <string name="subtitulo_onboarding_tres">Tenha acesso às avaliações de outros clientes, no estabelecimento do seu interesse!</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_pesquisa">Pesquisar</string>
+
 </resources>

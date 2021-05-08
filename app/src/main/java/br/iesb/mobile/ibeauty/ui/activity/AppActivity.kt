@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.ui.fragment.BuscaFragment
 import br.iesb.mobile.ibeauty.ui.fragment.HomeFragment
 import br.iesb.mobile.ibeauty.ui.fragment.LoginFragment
 
@@ -14,7 +15,8 @@ class AppActivity : AppCompatActivity() {
 
         supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fundoApp, HomeFragment(), "Home Fragment")
+//                .replace(R.id.fundoApp, HomeFragment(), "Home Fragment")
+                .replace(R.id.fundoApp, BuscaFragment(), "Busca Fragment")
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .commit()
     }
