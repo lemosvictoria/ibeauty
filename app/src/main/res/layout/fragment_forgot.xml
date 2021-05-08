@@ -1,85 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragment.ForgotFragment">
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bege"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="38dp">
+        tools:context=".ui.fragment.ForgotFragment">
 
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="214dp"
-            android:layout_height="70dp"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/logoibeauty" />
-
-        <ImageView
-            android:id="@+id/btVoltarTela"
-            android:layout_width="16dp"
-            android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/tvSolicitaRedefinicao"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.041"
-            app:layout_constraintStart_toStartOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bege"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.818"
-            app:srcCompat="@drawable/voltar" />
+            tools:layout_editor_absoluteX="38dp">
 
-        <TextView
-            android:id="@+id/tvSolicitaRedefinicao"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="52dp"
-            android:fontFamily="@font/comfortaa"
-            android:text="Redefinição de senha"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="214dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logoibeauty" />
 
-        <EditText
-            android:id="@+id/tvEmailRecuperacao"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="#3C3F41"
-            android:ems="10"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSolicitaRedefinicao" />
+            <ImageView
+                android:id="@+id/btVoltarTela"
+                android:layout_width="16dp"
+                android:layout_height="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvSolicitaRedefinicao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.818"
+                app:srcCompat="@drawable/voltar" />
 
-        <Button
-            android:id="@+id/btRecuperaSenha"
-            style="?botaoRose"
-            android:layout_width="0dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:text="Recuperar Senha"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao" />
+            <TextView
+                android:id="@+id/tvSolicitaRedefinicao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/titulo_redefine_senha"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <EditText
+                android:id="@+id/tvEmailRecuperacao"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#3C3F41"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSolicitaRedefinicao" />
+
+            <Button
+                android:id="@+id/btRecuperaSenha"
+                style="?botaoRose"
+                android:layout_width="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/recupera_senha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailRecuperacao" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
