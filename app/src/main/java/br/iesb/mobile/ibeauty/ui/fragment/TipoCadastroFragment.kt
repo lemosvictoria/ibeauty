@@ -6,13 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.fragment.findNavController
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentTipoCadastroBinding
 import kotlinx.android.synthetic.main.fragment_tipo_cadastro.*
 
 class TipoCadastroFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+
+    private lateinit var binding: FragmentTipoCadastroBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
