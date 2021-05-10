@@ -8,17 +8,23 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentCadastroClienteDoisBinding
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_cadastro_cliente_dois.*
 
 class CadastroClienteDoisFragment : Fragment() {
 
+    private lateinit var binding: FragmentCadastroClienteDoisBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cadastro_cliente_dois, container, false)
+        binding = FragmentCadastroClienteDoisBinding.inflate(inflater, container, false)
+        binding.cadastroClienteDois = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

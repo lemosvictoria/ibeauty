@@ -67,6 +67,7 @@ dependencies {
 
     /* Hilt - Dependency Injection */
     implementation "com.google.dagger:hilt-android:$hiltVersion"
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
     kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltAndroidXVersion"
     kapt "androidx.hilt:hilt-compiler:$hiltAndroidXVersion"

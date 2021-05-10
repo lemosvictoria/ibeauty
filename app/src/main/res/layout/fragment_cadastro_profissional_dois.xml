@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="cadastroProfissionalDois"
+            type="br.iesb.mobile.ibeauty.ui.fragment.CadastroProfissionalDoisFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

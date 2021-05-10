@@ -6,16 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentContatoEstabelecimentoBinding
 
 class ContatoEstabelecimentoFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?
+    private lateinit var binding: FragmentContatoEstabelecimentoBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contato_estabelecimento, container, false)
+        binding = FragmentContatoEstabelecimentoBinding.inflate(inflater, container, false)
+        binding.contatoEstabelecimento = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 }

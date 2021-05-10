@@ -6,22 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentConfirmaSolicitacaoAgendamentoBinding
 
 class ConfirmaSolicitacaoAgendamentoFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private lateinit var binding: FragmentConfirmaSolicitacaoAgendamentoBinding
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(
-                R.layout.fragment_confirma_solicitacao_agendamento,
-                container,
-                false
-        )
+        binding = FragmentConfirmaSolicitacaoAgendamentoBinding.inflate(inflater, container, false)
+        binding.confirmaSolicitacao = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 }
