@@ -5,6 +5,15 @@
     <string name="email">E-mail</string>
     <string name="senha">Senha</string>
     <string name="cadastro">Cadastro</string>
+    <string name="explorar">Explorar</string>
+    <string name="bem_vindo">SEJA BEM-VINDO(A)!</string>
+    <string name="cabeleireiro">Cabeleireiro</string>
+    <string name="unhas">Unhas</string>
+    <string name="maquiagem">Maquiagem</string>
+    <string name="spa">Spa</string>
+    <string name="depilacao">Depilação</string>
+    <string name="barbearia">Barbearia</string>
+    <string name="tipo_servico">Qual serviço você procura?</string>
     <string name="tit_agendamento">AGENDAMENTO</string>
     <string name="confirma_senha">Confirmar senha</string>
     <string name="recupera_senha">Recuperar senha</string>
