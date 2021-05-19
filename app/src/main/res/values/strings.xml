@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">iBeauty</string>
     <string name="todo">TODO</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_busca">Buscar</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_explorar">Explorar</string>
+    <string name="menu_perfil">Perfil</string>
     <string name="login">Login</string>
     <string name="email">E-mail</string>
     <string name="senha">Senha</string>
@@ -45,7 +50,7 @@
     <string name="subtitulo_onboarding_um">Pesquise os estabelecimentos mais próximos de você!</string>
     <string name="titulo_onboarding_dois">Agendamento de serviços de forma rápida e prática!</string>
     <string name="subtitulo_onboarding_dois">Solicite um horário com o estabelecimento de sua preferência!</string>
-    <string name="titulo_onboarding_tres">Estabelecimentos de beleza avaliados no nosso App!</string>
-    <string name="subtitulo_onboarding_tres">Tenha acesso às avaliações de outros clientes, no estabelecimento do seu interesse!</string>
+    <string name="titulo_onboarding_tres">Serviços feitos no conforto de sua casa!</string>
+    <string name="subtitulo_onboarding_tres">Tenha acesso a estabelecimentos que oferecem serviços a domicílio!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
