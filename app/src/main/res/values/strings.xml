@@ -12,5 +12,11 @@
     <string name="titulo_onboarding_tres">Estabelecimentos de beleza avaliados no nosso App!</string>
     <string name="subtitulo_onboarding_tres">Tenha acesso às avaliações de outros clientes, no estabelecimento do seu interesse!</string>
     <string name="titulo_pesquisa">Pesquisar</string>
+    <string name="mensagem">hi</string>
+    <string name="chat">mana</string>
+    <string name="assistente">Chat</string>
+    <string name="digite">Digite uma mensagem aqui</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

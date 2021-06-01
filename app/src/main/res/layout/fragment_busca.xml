@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/titBusca" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista_lojas"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/pesquisarLoja" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titBusca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
