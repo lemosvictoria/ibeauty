@@ -7,4 +7,7 @@
     <color name="rose">#f4b392</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bege2">#f4e0ce</color>
+    <color name="bege3">#e6d2c2</color>
+    <color name="bege4">#edd9c8</color>
 </resources>

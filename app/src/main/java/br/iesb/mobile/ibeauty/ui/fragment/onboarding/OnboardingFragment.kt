@@ -28,9 +28,9 @@ class OnboardingFragment : Fragment() {
         binding.lifecycleOwner = this
 
         val listaFragmentos = listOf(
-            OnboardingFirstFragment(),
-            OnboardingSecondFragment(),
-            OnboardingThirdFragment()
+                OnboardingFirstFragment(),
+                OnboardingSecondFragment(),
+                OnboardingThirdFragment()
         )
 
         val adaptador = AdaptadorConversacao(listaFragmentos, requireActivity().supportFragmentManager, lifecycle)
@@ -50,16 +50,14 @@ class OnboardingFragment : Fragment() {
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 ?.commit()
         }
-
     }
-
 }
 
 class AdaptadorConversacao(
-    val listaFragmentos: List<Fragment>,
-    fragmentManager: FragmentManager,
-    lifecycle: Lifecycle) :
-    FragmentStateAdapter(fragmentManager, lifecycle){
+        val listaFragmentos: List<Fragment>,
+        fragmentManager: FragmentManager,
+        lifecycle: Lifecycle) :
+        FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount() = listaFragmentos.size
     override fun createFragment(position: Int) = listaFragmentos[position]
