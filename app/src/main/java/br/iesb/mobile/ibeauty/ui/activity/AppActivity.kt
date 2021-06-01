@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.ui.fragment.ExplorarFragment
 import br.iesb.mobile.ibeauty.ui.fragment.HomeFragment
 import br.iesb.mobile.ibeauty.ui.fragment.MainFragment
 
@@ -13,9 +14,9 @@ class AppActivity : AppCompatActivity() {
         setContentView(R.layout.activity_app)
 
         supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.fundoApp, HomeFragment(), "Fragmento Autenticado")
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit()
+            .beginTransaction()
+            .replace(R.id.fundoApp, HomeFragment(), "Fragmento Autenticado")
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+            .commit()
     }
 }

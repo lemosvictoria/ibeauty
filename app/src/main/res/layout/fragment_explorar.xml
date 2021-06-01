@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="explorar"
+            type="br.iesb.mobile.ibeauty.ui.fragment.ExplorarFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/rose"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloExplorar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="EXPLORAR"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bege">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.fragment.ExplorarFragment">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="400dp"
+                    android:layout_height="1807dp"
+                    android:background="@color/bege"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-6dp">
+
+
+                    <Button
+                        android:id="@+id/btAgendamento"
+                        android:layout_width="0dp"
+                        android:layout_height="58dp"
+                        android:background="@color/marrom2"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Veja Mais"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/ivCabeloFem1"
+                        android:layout_width="183dp"
+                        android:layout_height="170dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cabelo_fem" />
+
+                    <ImageView
+                        android:id="@+id/ivPenteadoFem1"
+                        android:layout_width="151dp"
+                        android:layout_height="177dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView10"
+                        app:srcCompat="@drawable/penteado2" />
+
+                    <ImageView
+                        android:id="@+id/ivMake1"
+                        android:layout_width="148dp"
+                        android:layout_height="171dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivUnha3"
+                        app:srcCompat="@drawable/make1" />
+
+                    <ImageView
+                        android:id="@+id/ivEstetica1"
+                        android:layout_width="147dp"
+                        android:layout_height="157dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="7dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivCabeloFem1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivCabeloFem1"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/estetica3" />
+
+                    <ImageView
+                        android:id="@+id/ivUnha3"
+                        android:layout_width="167dp"
+                        android:layout_height="135dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                        app:srcCompat="@drawable/unhas3" />
+
+                    <ImageView
+                        android:id="@+id/ivEstetica2"
+                        android:layout_width="165dp"
+                        android:layout_height="151dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivUnha3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivUnha3"
+                        app:srcCompat="@drawable/estetica2" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="173dp"
+                        android:layout_height="157dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCabeloFem1"
+                        app:srcCompat="@drawable/barba2" />
+
+                    <ImageView
+                        android:id="@+id/ivCabeloMasc"
+                        android:layout_width="165dp"
+                        android:layout_height="171dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivMake1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivMake1"
+                        app:srcCompat="@drawable/cabelo_masc" />
+
+                    <ImageView
+                        android:id="@+id/ivDepilacao"
+                        android:layout_width="187dp"
+                        android:layout_height="142dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivMake1"
+                        app:srcCompat="@drawable/depilacao" />
+
+                    <ImageView
+                        android:id="@+id/ivMakeArtistica"
+                        android:layout_width="165dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivDepilacao"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivDepilacao"
+                        app:srcCompat="@drawable/make_artistica" />
+
+                    <ImageView
+                        android:id="@+id/ivCabeloMasc2"
+                        android:layout_width="174dp"
+                        android:layout_height="192dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivDepilacao"
+                        app:srcCompat="@drawable/cabelo_masc2" />
+
+                    <ImageView
+                        android:id="@+id/ivUnha"
+                        android:layout_width="183dp"
+                        android:layout_height="153dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivCabeloMasc2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivCabeloMasc2"
+                        app:srcCompat="@drawable/unhas1" />
+
+                    <ImageView
+                        android:id="@+id/ivMakeArtistica3"
+                        android:layout_width="196dp"
+                        android:layout_height="212dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCabeloMasc2"
+                        app:srcCompat="@drawable/make_artistica3" />
+
+                    <ImageView
+                        android:id="@+id/ivPenteado"
+                        android:layout_width="175dp"
+                        android:layout_height="218dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivMakeArtistica3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivMakeArtistica3"
+                        app:srcCompat="@drawable/penteado1" />
+
+                    <ImageView
+                        android:id="@+id/ivProcedimento"
+                        android:layout_width="193dp"
+                        android:layout_height="157dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivMakeArtistica3"
+                        app:srcCompat="@drawable/prodecimento1" />
+
+                    <ImageView
+                        android:id="@+id/ivMake2"
+                        android:layout_width="176dp"
+                        android:layout_height="173dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivProcedimento"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivProcedimento"
+                        app:srcCompat="@drawable/make2" />
+
+                    <ImageView
+                        android:id="@+id/ivUnha2"
+                        android:layout_width="168dp"
+                        android:layout_height="159dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivProcedimento"
+                        app:srcCompat="@drawable/unhas2" />
+
+                    <ImageView
+                        android:id="@+id/ivPenteado3"
+                        android:layout_width="167dp"
+                        android:layout_height="168dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivUnha2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivUnha2"
+                        app:srcCompat="@drawable/penteado3" />
+
+                    <ImageView
+                        android:id="@+id/ivEstetica"
+                        android:layout_width="177dp"
+                        android:layout_height="116dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivUnha2"
+                        app:srcCompat="@drawable/estetica1" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="179dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivEstetica"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ivEstetica"
+                        app:srcCompat="@drawable/sobrancelha" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</layout>
