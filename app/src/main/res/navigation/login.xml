@@ -48,18 +48,11 @@
         tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_loginFrament_to_homeFragment"
-            app:destination="@id/homeFragment"/>
-        <action
             android:id="@+id/action_loginFragment_to_forgotFragment"
             app:destination="@id/forgotFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="br.iesb.mobile.ibeauty.ui.fragment.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_loginFragment_to_appActivity"
+            app:destination="@id/appActivity" />
     </fragment>
 
     <fragment
@@ -133,5 +126,9 @@
             android:id="@+id/action_forgotFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <activity
+        android:id="@+id/appActivity"
+        android:name="br.iesb.mobile.ibeauty.ui.activity.AppActivity"
+        android:label="AppActivity" />
 
 </navigation>
