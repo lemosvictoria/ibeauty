@@ -4,9 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
-import br.iesb.mobile.ibeauty.ui.fragment.ExplorarFragment
-import br.iesb.mobile.ibeauty.ui.fragment.HomeFragment
-import br.iesb.mobile.ibeauty.ui.fragment.MainFragment
 
 class AppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
