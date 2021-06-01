@@ -1,81 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tela_login"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bege"
-    tools:context=".ui.fragment.MainFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/logoSup"
-        android:layout_width="0dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/ivMain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logoibeauty" />
+    <data>
+        <variable
+            name="main"
+            type="br.iesb.mobile.ibeauty.ui.fragment.MainFragment" />
+    </data>
 
-    <ImageView
-        android:id="@+id/ivMain"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoSup"
-        app:srcCompat="@drawable/imagemibeauty" />
-
-    <View
-        android:id="@+id/view"
-        style="@style/barra"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tela_login"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivMain" />
+        android:layout_height="match_parent"
+        android:background="@color/bege"
+        tools:context=".ui.fragment.MainFragment">
 
-    <Button
-        android:id="@+id/btLogin"
-        style="?botaoMarromEscuro"
-        android:layout_width="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="15dp"
-        android:text="@string/login"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/btCadastro"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        <ImageView
+            android:id="@+id/logoSup"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/ivMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoibeauty" />
 
-    <Button
-        android:id="@+id/btCadastro"
-        style="?botaoMarromClaro"
-        android:layout_width="0dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="30dp"
-        android:text="Cadastro"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btLogin"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        <ImageView
+            android:id="@+id/ivMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoSup"
+            app:srcCompat="@drawable/imagemibeauty" />
 
-    <ImageView
-        android:id="@+id/logoInf"
-        android:layout_width="135dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo2" />
+        <View
+            android:id="@+id/view"
+            style="@style/barra"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMain" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btLogin"
+            style="?botaoMarromEscuro"
+            android:layout_width="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/login"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toStartOf="@+id/btCadastro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <Button
+            android:id="@+id/btCadastro"
+            style="?botaoMarromClaro"
+            android:layout_width="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/cadastro"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btLogin"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/logoInf"
+            android:layout_width="135dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

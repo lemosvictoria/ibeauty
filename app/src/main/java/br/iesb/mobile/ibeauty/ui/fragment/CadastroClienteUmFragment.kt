@@ -7,20 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentCadastroClienteUmBinding
 import kotlinx.android.synthetic.main.fragment_cadastro_cliente_um.*
-import kotlinx.android.synthetic.main.fragment_cadastro_profissional_um.*
 
 class CadastroClienteUmFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+
+    private lateinit var binding: FragmentCadastroClienteUmBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cadastro_cliente_um, container, false)
+        binding = FragmentCadastroClienteUmBinding.inflate(inflater, container, false)
+        binding.cadastroClienteUm = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
