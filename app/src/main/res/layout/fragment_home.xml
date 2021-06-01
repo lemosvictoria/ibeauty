@@ -10,8 +10,8 @@
     </data>
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical" >
 
         <ScrollView
@@ -98,8 +98,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_percent="0.5"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
@@ -249,11 +249,9 @@
                     android:layout_width="0dp"
                     android:layout_height="57dp"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="24dp"
-                    android:layout_marginBottom="35dp"
-                    android:text="Ver Mais"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/ver_mais"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -319,6 +317,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/ivUm"
                     app:srcCompat="@drawable/foto_unha" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="281dp"
+                    android:layout_height="311dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btVerMais"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fundo_home" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="294dp"
+                    android:layout_height="306dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btVerMais"
+                    app:srcCompat="@drawable/folha_home" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>

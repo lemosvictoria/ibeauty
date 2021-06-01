@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    app:startDestination="@id/appActivity">
+
+    <fragment
+        android:id="@+id/appActivity"
+        android:name="br.iesb.mobile.ibeauty.ui.activity.AppActivity"
+        android:label="appActivity"/>
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.PerfilClienteFragment"
+        android:label="PerfilFragment"
+        tools:layout="@layout/fragment_perfil_cliente"/>
+</navigation>

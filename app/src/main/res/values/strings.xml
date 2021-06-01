@@ -37,6 +37,7 @@
     <string name="bt_proximo">Próximo</string>
     <string name="cep">CEP</string>
     <string name="endereco">Endereço</string>
+    <string name="ver_mais">Ver mais</string>
     <string name="saber_mais">Quer saber mais? Entre em contato conosco!</string>
     <string name="txt_contatos">Não conseguiu marcar um horário através do aplicativo? Entre em contato conosco, venha conhecer o nosso espaço!</string>
     <string name="nome_completo_cliente">Nome completo</string>

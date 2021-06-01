@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/icon_1"
+        android:id="@+id/btHome"
         android:enabled="true"
         android:icon="@drawable/icon_home"
         android:title="@string/menu_home" />
     <item
-        android:id="@+id/icon_2"
+        android:id="@+id/btBusca"
         android:enabled="true"
         android:icon="@drawable/icon_busca"
-        android:title="@string/menu_busca"/>
+        android:title="@string/menu_busca" />
     <item
-        android:id="@+id/icon_3"
+        android:id="@+id/btChat"
         android:enabled="true"
         android:icon="@drawable/icon_chatbot"
         android:title="@string/menu_chat" />
     <item
-        android:id="@+id/icon_4"
+        android:id="@+id/btExplorar"
         android:enabled="true"
         android:icon="@drawable/icon_camera"
         android:title="@string/menu_explorar"/>
     <item
-        android:id="@+id/icon_5"
+        android:id="@+id/btPerfil"
         android:enabled="true"
         android:icon="@drawable/icon_perfil"
-        android:title="@string/menu_perfil"/>
-
+        android:title="@string/menu_perfil" />
 </menu>
