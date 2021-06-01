@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="perfil"
+            type="br.iesb.mobile.ibeauty.ui.fragment.PerfilClienteFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.PerfilClienteFragment"
+        android:background="@color/bege">
+
+        <ImageView
+            android:id="@+id/logoIbeauty"
+            android:layout_width="200dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logoibeauty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivUsuarioPerfil"
+            android:layout_width="136dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/perfil_usuario_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoIbeauty" />
+
+        <TextView
+            android:id="@+id/tvNomeUsuarioPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="@string/nome_completo_cliente"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivUsuarioPerfil" />
+
+        <TextView
+            android:id="@+id/tvEnderecoPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textPostalAddress"
+            android:text="@string/endereco"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNomeUsuarioPerfil" />
+
+        <TextView
+            android:id="@+id/tvCepPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textPostalAddress"
+            android:text="@string/cep"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEnderecoPerfil" />
+
+        <TextView
+            android:id="@+id/tvDataNascPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="date"
+            android:text="@string/data_nascimento"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCepPerfil" />
+
+        <TextView
+            android:id="@+id/tvTelefonePerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="phone"
+            android:text="@string/telefone"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataNascPerfil" />
+
+        <Button
+            android:id="@+id/btLogout"
+            style="?botaoRose"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:text="Sair"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTelefonePerfil"
+            app:layout_constraintVertical_bias="0.366" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

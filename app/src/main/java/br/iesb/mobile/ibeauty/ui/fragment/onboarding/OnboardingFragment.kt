@@ -42,17 +42,15 @@ class OnboardingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         btOnboarding.setOnClickListener {
             activity?.supportFragmentManager
-                    ?.beginTransaction()
-                    ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento Principal")
-                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    ?.commit()
+                ?.beginTransaction()
+                ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento Principal")
+                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.commit()
         }
     }
-
-    //terminar navegação botão "vamos lá"
-
 }
 
 class AdaptadorConversacao(

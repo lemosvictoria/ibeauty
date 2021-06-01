@@ -1,23 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/telaHomeClient"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragment.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGIN EFETUADO COM SUCESSO!"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+        <variable
+            name="home"
+            type="br.iesb.mobile.ibeauty.ui.fragment.HomeFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bege">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/telaHomeClient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:context=".ui.fragment.HomeFragment">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="0dp"
+                    android:layout_height="104dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logoibeauty" />
+
+                <ImageView
+                    android:id="@+id/ivWomanHome"
+                    android:layout_width="0dp"
+                    android:layout_height="412dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBemVindo"
+                    app:srcCompat="@drawable/woman" />
+
+                <TextView
+                    android:id="@+id/tvServicos"
+                    android:layout_width="0dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/tipo_servico"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivWomanHome" />
+
+                <TextView
+                    android:id="@+id/tvBemVindo"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/bem_vindo"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+                <ImageView
+                    android:id="@+id/ivCabelo"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivUnhas"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvServicos"
+                    app:srcCompat="@drawable/cabelo" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_percent="0.5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCabelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/cabeleireiro"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCabelo" />
+
+                <TextView
+                    android:id="@+id/tvMaquiagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/maquiagem"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivMaquiagem" />
+
+                <ImageView
+                    android:id="@+id/ivMaquiagem"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivSpa"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCabelo"
+                    app:srcCompat="@drawable/maquiagem" />
+
+                <ImageView
+                    android:id="@+id/ivUnhas"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCabelo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivCabelo"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toTopOf="@+id/ivCabelo"
+                    app:srcCompat="@drawable/unhas" />
+
+                <ImageView
+                    android:id="@+id/ivSpa"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivMaquiagem"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMaquiagem"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toTopOf="@+id/ivMaquiagem"
+                    app:srcCompat="@drawable/spa" />
+
+                <TextView
+                    android:id="@+id/tvSpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/spa"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toBottomOf="@+id/ivSpa" />
+
+                <TextView
+                    android:id="@+id/tvUnhas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/unhas"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toBottomOf="@+id/ivUnhas" />
+
+                <ImageView
+                    android:id="@+id/ivDepilacao"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivBarbearia"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMaquiagem"
+                    app:srcCompat="@drawable/depilacao" />
+
+                <ImageView
+                    android:id="@+id/ivBarbearia"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivDepilacao"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivDepilacao"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toTopOf="@+id/ivDepilacao"
+                    app:srcCompat="@drawable/barbearia" />
+
+                <TextView
+                    android:id="@+id/tvDepilacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/depilacao"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivDepilacao" />
+
+                <TextView
+                    android:id="@+id/tvBarbearia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/barbearia"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toBottomOf="@+id/ivBarbearia" />
+
+                <TextView
+                    android:id="@+id/tvExplorarHome"
+                    android:layout_width="0dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/explorar"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBarbearia" />
+
+                <Button
+                    android:id="@+id/btVerMais"
+                    style="?botaoMarromEscuro"
+                    android:layout_width="0dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/ver_mais"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCinco" />
+
+                <ImageView
+                    android:id="@+id/ivUm"
+                    android:layout_width="175dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvExplorarHome"
+                    app:srcCompat="@drawable/foto_cabeleireiro" />
+
+                <ImageView
+                    android:id="@+id/uvDois"
+                    android:layout_width="165dp"
+                    android:layout_height="175dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivUm"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toTopOf="@+id/ivUm"
+                    app:srcCompat="@drawable/foto_barbearia" />
+
+                <ImageView
+                    android:id="@+id/ivSeis"
+                    android:layout_width="165dp"
+                    android:layout_height="175dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCinco"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toTopOf="@+id/ivCinco"
+                    app:srcCompat="@drawable/foto_maquiagem" />
+
+                <ImageView
+                    android:id="@+id/ivQuatro"
+                    android:layout_width="165dp"
+                    android:layout_height="175dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTres"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.507"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintTop_toTopOf="@+id/ivTres"
+                    app:srcCompat="@drawable/foto_corte_feminino" />
+
+                <ImageView
+                    android:id="@+id/ivCinco"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivTres"
+                    app:srcCompat="@drawable/foto_corte_masculino" />
+
+                <ImageView
+                    android:id="@+id/ivTres"
+                    android:layout_width="165dp"
+                    android:layout_height="175dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivUm"
+                    app:srcCompat="@drawable/foto_unha" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="281dp"
+                    android:layout_height="311dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btVerMais"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/fundo_home" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="294dp"
+                    android:layout_height="306dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btVerMais"
+                    app:srcCompat="@drawable/folha_home" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
