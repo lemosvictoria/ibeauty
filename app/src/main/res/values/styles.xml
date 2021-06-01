@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="barra">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/amarelo</item>
+    </style>
+    
+    <style name="Widget.MeuTitulo" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.botaoAmarelo">
+        <item name="backgroundTint">@color/amarelo</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/marrom2</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.botaoRose">
+        <item name="backgroundTint">@color/rose</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/marrom2</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.botaoMarromEscuro">
+        <item name="backgroundTint">@color/marrom2</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.botaoMarromClaro">
+        <item name="backgroundTint">@color/marrom1</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+</resources>
+

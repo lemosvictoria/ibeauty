@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "215578760083",
+    "project_id": "ibeauty-71dbb",
+    "storage_bucket": "ibeauty-71dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215578760083:android:42c13eeb08aa8b24dc8e66",
+        "android_client_info": {
+          "package_name": "br.iesb.mobile.ibeauty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215578760083-br55q1mvuhcq4imvkrtshai8c80q6q4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJMOaNLW9iyEYeiZjqj4Z4gpQibUvgu5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215578760083-br55q1mvuhcq4imvkrtshai8c80q6q4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

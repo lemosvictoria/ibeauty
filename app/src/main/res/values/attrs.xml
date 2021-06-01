@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="botaoAmarelo" format="reference"/>
+    <attr name="botaoRose" format="reference"/>
+    <attr name="botaoMarromClaro" format="reference"/>
+    <attr name="botaoMarromEscuro" format="reference"/>
+</resources>
