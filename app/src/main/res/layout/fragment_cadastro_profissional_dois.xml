@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -22,7 +21,6 @@
             android:background="@color/bege"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="-104dp">
-
 
             <TextView
                 android:id="@+id/tvCadastroProfissional2"

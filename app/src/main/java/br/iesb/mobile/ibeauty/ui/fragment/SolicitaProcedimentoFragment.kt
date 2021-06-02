@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentSolicitaProcedimentoBinding
 
 class SolicitaProcedimentoFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private lateinit var binding: FragmentSolicitaProcedimentoBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                                 savedInstanceState: Bundle? ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_solicita_procedimento, container, false)
+        binding = FragmentSolicitaProcedimentoBinding.inflate(inflater, container, false)
+        binding.solicitacao = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
 
 }

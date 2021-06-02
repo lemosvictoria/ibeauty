@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="onboardingTres"
+            type="br.iesb.mobile.ibeauty.ui.fragment.onboarding.screen.OnboardingThirdFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

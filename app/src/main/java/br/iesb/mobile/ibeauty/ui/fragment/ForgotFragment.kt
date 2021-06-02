@@ -12,7 +12,6 @@ import br.iesb.mobile.ibeauty.databinding.FragmentForgotBinding
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_forgot.*
 
-
 class ForgotFragment : Fragment() {
 
     private lateinit var binding: FragmentForgotBinding

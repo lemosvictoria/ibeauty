@@ -14,14 +14,9 @@ import br.iesb.mobile.ibeauty.ui.activity.AppActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_login.*
 
-
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

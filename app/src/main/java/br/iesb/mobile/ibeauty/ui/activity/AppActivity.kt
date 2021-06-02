@@ -1,5 +1,6 @@
 package br.iesb.mobile.ibeauty.ui.activity
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
@@ -14,6 +15,9 @@ import kotlinx.android.synthetic.main.activity_app.*
 class AppActivity : AppCompatActivity() {
 
     private val HomeFragment = HomeFragment()
+    private val BuscaFragment = BuscaFragment()
+    private val ChatBotFragment = ChatBotFragment()
+    private val ExplorarFragment = ExplorarFragment()
     private val PerfilClienteFragment = PerfilClienteFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +28,9 @@ class AppActivity : AppCompatActivity() {
         bottom_navigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.btHome -> replaceFragment(HomeFragment)
+                R.id.btBusca -> replaceFragment(BuscaFragment)
+                R.id.btChat -> replaceFragment(ChatBotFragment)
+                R.id.btExplorar -> replaceFragment(ExplorarFragment)
                 R.id.btPerfil -> replaceFragment(PerfilClienteFragment)
             }
             true

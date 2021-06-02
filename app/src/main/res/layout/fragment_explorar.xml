@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -11,129 +10,126 @@
     </data>
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@color/rose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tituloExplorar"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:fontFamily="@font/comfortaa"
-            android:text="EXPLORAR"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="156dp"
-            tools:layout_editor_absoluteY="16dp" />
+            android:layout_height="match_parent">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/bege">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ScrollView
+                android:id="@+id/scrollViewExplorar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".ui.fragment.ExplorarFragment">
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/bege"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topbar">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="400dp"
-                    android:layout_height="1807dp"
-                    android:background="@color/bege"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="-6dp">
-
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".ui.fragment.ExplorarFragment">
 
                     <Button
                         android:id="@+id/btAgendamento"
+                        style="?botaoMarromEscuro"
                         android:layout_width="0dp"
                         android:layout_height="58dp"
-                        android:background="@color/marrom2"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="24dp"
                         android:fontFamily="@font/comfortaa"
-                        android:text="Veja Mais"
-                        android:textSize="20sp"
+                        android:text="@string/ver_mais"
+                        android:textSize="14sp"
                         android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivEstetica"
+                        tools:ignore="MissingConstraints" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:ignore="MissingConstraints" />
+                        app:layout_constraintTop_toBottomOf="@+id/ivEstetica">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <ImageView
                         android:id="@+id/ivCabeloFem1"
-                        android:layout_width="183dp"
-                        android:layout_height="170dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="25dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/cabelo_fem" />
 
                     <ImageView
                         android:id="@+id/ivPenteadoFem1"
-                        android:layout_width="151dp"
-                        android:layout_height="177dp"
-                        android:layout_marginEnd="10dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivCorteBarba"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/imageView10"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+                        app:layout_constraintTop_toTopOf="@+id/ivCorteBarba"
                         app:srcCompat="@drawable/penteado2" />
 
                     <ImageView
                         android:id="@+id/ivMake1"
-                        android:layout_width="148dp"
-                        android:layout_height="171dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivUnha3"
                         app:srcCompat="@drawable/make1" />
 
                     <ImageView
                         android:id="@+id/ivEstetica1"
-                        android:layout_width="147dp"
-                        android:layout_height="157dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="7dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivCabeloFem1"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivCabeloFem1"
-                        app:layout_constraintVertical_bias="1.0"
                         app:srcCompat="@drawable/estetica3" />
 
                     <ImageView
                         android:id="@+id/ivUnha3"
-                        android:layout_width="167dp"
-                        android:layout_height="135dp"
-                        android:layout_marginStart="18dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                        app:layout_constraintHorizontal_bias="0.511"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-                        app:srcCompat="@drawable/unhas3" />
+                        app:layout_constraintTop_toBottomOf="@+id/ivCorteBarba"
+                        app:srcCompat="@drawable/foto_unha" />
 
                     <ImageView
                         android:id="@+id/ivEstetica2"
                         android:layout_width="165dp"
-                        android:layout_height="151dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivUnha3"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivUnha3"
                         app:srcCompat="@drawable/estetica2" />
 
                     <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="173dp"
-                        android:layout_height="157dp"
-                        android:layout_marginStart="10dp"
+                        android:id="@+id/ivCorteBarba"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivCabeloFem1"
                         app:srcCompat="@drawable/barba2" />
@@ -141,19 +137,19 @@
                     <ImageView
                         android:id="@+id/ivCabeloMasc"
                         android:layout_width="165dp"
-                        android:layout_height="171dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivMake1"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivMake1"
                         app:srcCompat="@drawable/cabelo_masc" />
 
                     <ImageView
                         android:id="@+id/ivDepilacao"
-                        android:layout_width="187dp"
-                        android:layout_height="142dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivMake1"
                         app:srcCompat="@drawable/depil_procedimento" />
@@ -161,122 +157,154 @@
                     <ImageView
                         android:id="@+id/ivMakeArtistica"
                         android:layout_width="165dp"
-                        android:layout_height="150dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivDepilacao"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivDepilacao"
                         app:srcCompat="@drawable/make_artistica" />
 
                     <ImageView
                         android:id="@+id/ivCabeloMasc2"
-                        android:layout_width="174dp"
-                        android:layout_height="192dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivDepilacao"
                         app:srcCompat="@drawable/cabelo_masc2" />
 
                     <ImageView
                         android:id="@+id/ivUnha"
-                        android:layout_width="183dp"
-                        android:layout_height="153dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivCabeloMasc2"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivCabeloMasc2"
                         app:srcCompat="@drawable/unhas1" />
 
                     <ImageView
                         android:id="@+id/ivMakeArtistica3"
-                        android:layout_width="196dp"
-                        android:layout_height="212dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivCabeloMasc2"
                         app:srcCompat="@drawable/make_artistica3" />
 
                     <ImageView
                         android:id="@+id/ivPenteado"
-                        android:layout_width="175dp"
-                        android:layout_height="218dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivMakeArtistica3"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivMakeArtistica3"
                         app:srcCompat="@drawable/penteado1" />
 
                     <ImageView
                         android:id="@+id/ivProcedimento"
-                        android:layout_width="193dp"
-                        android:layout_height="157dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivMakeArtistica3"
                         app:srcCompat="@drawable/prodecimento1" />
 
                     <ImageView
                         android:id="@+id/ivMake2"
-                        android:layout_width="176dp"
-                        android:layout_height="173dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivProcedimento"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivProcedimento"
                         app:srcCompat="@drawable/make2" />
 
                     <ImageView
                         android:id="@+id/ivUnha2"
-                        android:layout_width="168dp"
-                        android:layout_height="159dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivProcedimento"
                         app:srcCompat="@drawable/unhas2" />
 
                     <ImageView
                         android:id="@+id/ivPenteado3"
-                        android:layout_width="167dp"
-                        android:layout_height="168dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_width="165dp"
+                        android:layout_height="175dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivUnha2"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivUnha2"
                         app:srcCompat="@drawable/penteado3" />
 
                     <ImageView
                         android:id="@+id/ivEstetica"
-                        android:layout_width="177dp"
-                        android:layout_height="116dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="175dp"
+                        android:layout_height="165dp"
                         android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivUnha2"
                         app:srcCompat="@drawable/estetica1" />
 
                     <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="179dp"
-                        android:layout_height="120dp"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginEnd="10dp"
+                        android:id="@+id/ivSobrancelha"
+                        android:layout_width="175dp"
+                        android:layout_height="165dp"
                         app:layout_constraintBottom_toBottomOf="@+id/ivEstetica"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintTop_toTopOf="@+id/ivEstetica"
                         app:srcCompat="@drawable/sobrancelha" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelineCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_percent="0.5"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
 
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topbar"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:background="@color/rose"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/titExplorar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/titulo_explorar"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </ScrollView>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-
-
 </layout>

@@ -5,23 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentChatBotBinding
 
+class ChatBotFragment : Fragment() {
 
-class FragmentChatBot : Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private lateinit var binding: FragmentChatBotBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat_bot, container, false)
+        binding = FragmentChatBotBinding.inflate(inflater, container, false)
+        binding.chat = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
-
-
 }

@@ -100,7 +100,7 @@
                 android:backgroundTint="#3C3F41"
                 android:ems="10"
                 android:hint="@string/cep"
-                android:inputType="textPostalAddress"
+                android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvEndereco" />
