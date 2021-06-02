@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.activity.AppActivity" />
+        <activity android:name=".ui.activity.AppActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

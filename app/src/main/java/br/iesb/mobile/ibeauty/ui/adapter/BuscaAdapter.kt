@@ -1,6 +1,5 @@
 package br.iesb.mobile.ibeauty.ui.adapter
 
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Base64
 import android.view.LayoutInflater
@@ -12,12 +11,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.iesb.mobile.ibeauty.R
-import br.iesb.mobile.ibeauty.domain.Loja
+import br.iesb.mobile.ibeauty.domain.Estabelecimento
 import kotlinx.android.synthetic.main.busca_card.view.*
 
 class BuscaAdapter(
-    var lista: MutableList<Loja>,
-    var listaFiltrada: MutableList<Loja>
+    var lista: MutableList<Estabelecimento>,
+    var listaFiltrada: MutableList<Estabelecimento>
 ) : RecyclerView.Adapter<BuscaAdapter.BuscaViewHolder>(), Filterable {
     class BuscaViewHolder(item: View) : RecyclerView.ViewHolder(item) {
         val logo: ImageView = item.logo_busca
@@ -51,7 +50,7 @@ class BuscaAdapter(
                     resultadosFiltrados.values = lista
                 } else {
                     val texto = constraint.toString().toUpperCase()
-                    val resultados = ArrayList<Loja>()
+                    val resultados = ArrayList<Estabelecimento>()
 
                     for (elemento in lista) {
                         if (elemento.nome.contains(texto)) {
@@ -70,7 +69,7 @@ class BuscaAdapter(
             override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
                 if (results?.values != null){
                     @Suppress("UNCHECKED_CAST")
-                    listaFiltrada = results.values as ArrayList<Loja>
+                    listaFiltrada = results.values as ArrayList<Estabelecimento>
                     notifyDataSetChanged()
                 }
             }

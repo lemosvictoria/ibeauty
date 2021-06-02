@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="splashScreen"
+            type="br.iesb.mobile.ibeauty.ui.fragment.onboarding.SplashscreenFragment" />
     </data>
 
     <androidx.constraintlayout.motion.widget.MotionLayout

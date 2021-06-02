@@ -31,6 +31,7 @@
     <string name="titulo_cadastro_estabelecimento">Cadastro estabelecimento:</string>
     <string name="titulo_localizacao">LOCALIZAÇÃO</string>
     <string name="titulo_contatos">NOSSOS CONTATOS</string>
+    <string name="titulo_explorar">EXPLORAR</string>
     <string name="data_nascimento">Data de nascimento</string>
     <string name="telefone">Telefone</string>
     <string name="telefone_estabelecimento">Telefone para contato</string>
@@ -38,6 +39,7 @@
     <string name="cep">CEP</string>
     <string name="endereco">Endereço</string>
     <string name="ver_mais">Ver mais</string>
+    <string name="bt_sair">Sair</string>
     <string name="saber_mais">Quer saber mais? Entre em contato conosco!</string>
     <string name="txt_contatos">Não conseguiu marcar um horário através do aplicativo? Entre em contato conosco, venha conhecer o nosso espaço!</string>
     <string name="nome_completo_cliente">Nome completo</string>
@@ -51,14 +53,19 @@
     <string name="subtitulo_onboarding_um">Pesquise os estabelecimentos mais próximos de você!</string>
     <string name="titulo_onboarding_dois">Agendamento de serviços de forma rápida e prática!</string>
     <string name="subtitulo_onboarding_dois">Solicite um horário com o estabelecimento de sua preferência!</string>
-    <string name="titulo_onboarding_tres">Estabelecimentos de beleza avaliados no nosso App!</string>
-    <string name="subtitulo_onboarding_tres">Tenha acesso às avaliações de outros clientes, no estabelecimento do seu interesse!</string>
-    <string name="titulo_pesquisa">Pesquisar</string>
-    <string name="mensagem">hi</string>
-    <string name="chat">mana</string>
-    <string name="assistente">Chat</string>
-    <string name="digite">Digite uma mensagem aqui</string>
     <string name="titulo_onboarding_tres">Serviços feitos no conforto de sua casa!</string>
     <string name="subtitulo_onboarding_tres">Tenha acesso a estabelecimentos que oferecem serviços a domicílio!</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_pesquisa">Pesquisar</string>
+    <string name="titulo_agendamento">AGENDAMENTO</string>
+    <string name="mensagem">hi</string>
+    <string name="chat">mana</string>
+    <string name="assistente">CHAT</string>
+    <string name="digite">Digite uma mensagem aqui</string>
+    <string name="solicita_horario">Solicitar horário</string>
+    <string name="telefone_wpp">Informe seu telefone/whatsapp:</string>
+    <string name="servico_agendamento">Qual serviço você deseja agendar?</string>
+    <string name="escolher_data">Escolha um dia e horário:</string>
+    <string name="hint_telefone">(xx) xxxxx-xxxx</string>
+    <string name="hint_hora">xx:xx</string>
+    <string name="hint_data">xx/xx/xxxx</string>
 </resources>

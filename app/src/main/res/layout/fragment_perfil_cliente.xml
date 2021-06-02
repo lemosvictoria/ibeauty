@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <data>
         <variable
             name="perfil"
@@ -55,7 +56,6 @@
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/comfortaa"
-            android:inputType="textPostalAddress"
             android:text="@string/endereco"
             android:textColor="@color/black"
             android:textSize="12sp"
@@ -70,14 +70,13 @@
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/comfortaa"
-            android:inputType="textPostalAddress"
             android:text="@string/cep"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvEnderecoPerfil" />
+            app:layout_constraintTop_toBottomOf="@+id/tvEnderecoPerfil"/>
 
         <TextView
             android:id="@+id/tvDataNascPerfil"
@@ -85,7 +84,6 @@
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/comfortaa"
-            android:inputType="date"
             android:text="@string/data_nascimento"
             android:textColor="@color/black"
             android:textSize="12sp"
@@ -100,7 +98,6 @@
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/comfortaa"
-            android:inputType="phone"
             android:text="@string/telefone"
             android:textColor="@color/black"
             android:textSize="12sp"
@@ -118,7 +115,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="20dp"
-            android:text="Sair"
+            android:text="@string/bt_sair"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

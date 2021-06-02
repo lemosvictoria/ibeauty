@@ -5,20 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.iesb.mobile.ibeauty.R
+import br.iesb.mobile.ibeauty.databinding.FragmentExplorarBinding
 
 class ExplorarFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private lateinit var binding: FragmentExplorarBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_explorar, container, false)
+        binding = FragmentExplorarBinding.inflate(inflater, container, false)
+        binding.explorar = this
+        binding.lifecycleOwner = this
+
+        return binding.root
     }
-
-
 }

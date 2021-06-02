@@ -259,8 +259,8 @@
 
                 <ImageView
                     android:id="@+id/ivUm"
-                    android:layout_width="175dp"
-                    android:layout_height="165dp"
+                    android:layout_width="165dp"
+                    android:layout_height="175dp"
                     android:layout_marginTop="15dp"
                     app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                     app:layout_constraintStart_toStartOf="parent"
@@ -293,7 +293,6 @@
                     android:layout_height="175dp"
                     app:layout_constraintBottom_toBottomOf="@+id/ivTres"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.507"
                     app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
                     app:layout_constraintTop_toTopOf="@+id/ivTres"
                     app:srcCompat="@drawable/foto_corte_feminino" />
@@ -301,7 +300,7 @@
                 <ImageView
                     android:id="@+id/ivCinco"
                     android:layout_width="165dp"
-                    android:layout_height="165dp"
+                    android:layout_height="175dp"
                     android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                     app:layout_constraintStart_toStartOf="parent"
@@ -319,7 +318,7 @@
                     app:srcCompat="@drawable/foto_unha" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/fundoHome"
                     android:layout_width="281dp"
                     android:layout_height="311dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -329,7 +328,7 @@
                     app:srcCompat="@drawable/fundo_home" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/folhaHome"
                     android:layout_width="294dp"
                     android:layout_height="306dp"
                     android:layout_marginTop="4dp"
