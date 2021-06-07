@@ -33,10 +33,10 @@ class CadastroClienteDoisFragment : Fragment() {
         //BT Voltar
         btVoltarTela.setOnClickListener {
             activity?.supportFragmentManager
-                    ?.beginTransaction()
-                    ?.replace(R.id.fundoLogin, CadastroClienteUmFragment(), "Fragmento cliente parte 2")
-                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    ?.commit()
+                ?.beginTransaction()
+                ?.replace(R.id.fundoLogin, CadastroClienteUmFragment(), "Fragmento cliente parte 2")
+                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.commit()
         }
 
         //BT Cadastrar
@@ -47,9 +47,9 @@ class CadastroClienteDoisFragment : Fragment() {
 
     //Funcao Valida Cadastro Cliente
     private fun cadastrar(){
-        val email = tvEmailCadastro.text.toString()
-        val password = tvSenhaCadastro.text.toString()
-        val confirmaPass = tvConfirmarSenha.text.toString()
+        val email = tvEmailCadastro.text.toString().trim()
+        val password = tvSenhaCadastro.text.toString().trim()
+        val confirmaPass = tvConfirmarSenha.text.toString().trim()
 
         if (password != confirmaPass){
             Toast.makeText(activity, "Senhas não conferem!", Toast.LENGTH_LONG).show()
@@ -62,10 +62,10 @@ class CadastroClienteDoisFragment : Fragment() {
         taskDeLogin.addOnCompleteListener { resultado ->
             if (resultado.isSuccessful) {
                 activity?.supportFragmentManager
-                        ?.beginTransaction()
-                        ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento cliente parte 2")
-                        ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                        ?.commit()
+                    ?.beginTransaction()
+                    ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento cliente parte 2")
+                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    ?.commit()
 
             } else {
                 Toast.makeText(activity, "Erro no Cadastro! Tente Novamente!", Toast.LENGTH_LONG).show()

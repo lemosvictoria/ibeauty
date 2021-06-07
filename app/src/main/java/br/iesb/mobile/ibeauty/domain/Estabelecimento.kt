@@ -8,6 +8,7 @@ data class Estabelecimento(
     var logo: String,
     var latitude: Double,
     var longitude: Double,
+    var cidade: String,
     var nome: String,
     var telefone: Int,
     var instagram: String,
