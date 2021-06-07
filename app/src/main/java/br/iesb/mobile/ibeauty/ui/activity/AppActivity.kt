@@ -19,8 +19,6 @@ class AppActivity : AppCompatActivity() {
     private val ChatBotFragment = ChatBotFragment()
     private val ExplorarFragment = ExplorarFragment()
     private val PerfilClienteFragment = PerfilClienteFragment()
-    private val SolicitaProcedimentoFragment = SolicitaProcedimentoFragment()
-    private val PerfilEstabelecimentoFragment = PerfilEstabelecimentoFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +30,7 @@ class AppActivity : AppCompatActivity() {
                 R.id.btHome -> replaceFragment(HomeFragment)
                 R.id.btBusca -> replaceFragment(BuscaFragment)
                 R.id.btChat -> replaceFragment(ChatBotFragment)
-                R.id.btExplorar -> replaceFragment(PerfilEstabelecimentoFragment)
+                R.id.btExplorar -> replaceFragment(ExplorarFragment)
                 R.id.btPerfil -> replaceFragment(PerfilClienteFragment)
             }
             true
