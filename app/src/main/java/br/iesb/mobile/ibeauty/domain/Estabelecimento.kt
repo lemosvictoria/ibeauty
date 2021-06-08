@@ -5,17 +5,16 @@ data class Servico(
 )
 
 data class Estabelecimento(
-    var logo: String,
-    var latitude: Double,
-    var longitude: Double,
-    var nome: String,
-    var telefone: Int,
-    var instagram: String,
-    var facebook: String,
-    var servicos: List<Servico>,
-    var email: String,
-    var fotosTrabalhos: String,
-    var fotoPerfil: String,
-    var descricao: String,
-    var domicilio: Boolean
+    var logoEstabelecimento: String,
+    var latitudeEstabelecimento: Double,
+    var longitudeEstabelecimento: Double,
+    var cidadeEstabelecimento: String,
+    var nomeEstabelecimento: String,
+    var telefoneEstabelecimento: String,
+    var instagramEstabelecimento: String,
+    var facebookEstabelecimento: String,
+    var servicosEstabelecimento: List<Servico>,
+    var emailEstabelecimento: String,
+    var descricaoEstabelecimento: String,
+    var domicilioEstabelecimento: Boolean
 )

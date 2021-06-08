@@ -27,15 +27,12 @@ class PerfilEstabelecimentoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btSolicitaHorario.setOnClickListener {
-
-        }
-
         btContatos.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
                 ?.replace(R.id.fundoApp, ContatoEstabelecimentoFragment(), "Fragmento perfil estabelecimento")
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 
@@ -44,6 +41,15 @@ class PerfilEstabelecimentoFragment : Fragment() {
                 ?.beginTransaction()
                 ?.replace(R.id.fundoApp, LocalizacaoEstabelecimentoFragment(), "Fragmento perfil estabelecimento")
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
+                ?.commit()
+        }
+
+        btSolicitaHorario.setOnClickListener {
+            activity?.supportFragmentManager
+                ?.beginTransaction()
+                ?.replace(R.id.fundoApp, SolicitaProcedimentoFragment(), "Fragmento perfil estabelecimento")
+                ?.addToBackStack(null)
                 ?.commit()
         }
 

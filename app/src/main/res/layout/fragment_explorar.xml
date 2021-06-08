@@ -212,7 +212,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivMakeArtistica3"
-                        app:srcCompat="@drawable/prodecimento1" />
+                        app:srcCompat="@drawable/procedimento1" />
 
                     <ImageView
                         android:id="@+id/ivMake2"

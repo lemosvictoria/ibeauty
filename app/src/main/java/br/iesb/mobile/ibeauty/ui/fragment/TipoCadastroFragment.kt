@@ -39,24 +39,39 @@ class TipoCadastroFragment : Fragment() {
         linkLogin.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
-                ?.replace(R.id.fundoLogin, LoginFragment(), "Fragmento de tipo de cadastro")
+                ?.replace(
+                    R.id.fundoLogin,
+                    LoginFragment(),
+                    "Fragmento de tipo de cadastro"
+                )
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 
         btTipoCliente.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
-                ?.replace(R.id.fundoLogin, CadastroClienteUmFragment(), "Fragmento de tipo de cadastro")
+                ?.replace(
+                    R.id.fundoLogin,
+                    CadastroClienteFragment(),
+                    "Fragmento de tipo de cadastro"
+                )
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 
         btTipoProfissional.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
-                ?.replace(R.id.fundoLogin, CadastroProfissionalUmFragment(), "Fragmento de tipo de cadastro")
+                ?.replace(
+                    R.id.fundoLogin,
+                    CadastroProfissionalUmFragment(),
+                    "Fragmento de tipo de cadastro"
+                )
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
     }

@@ -65,6 +65,9 @@
     <string name="telefone_wpp">Informe seu telefone/whatsapp:</string>
     <string name="servico_agendamento">Qual serviço você deseja agendar?</string>
     <string name="escolher_data">Escolha um dia e horário:</string>
+    <string name="tipo_atendimento">Escolha um meio de atendimento:</string>
+    <string name="tipo_atendimento_um">No estabelecimento</string>
+    <string name="tipo_atendimento_dois">Em domicílio</string>
     <string name="hint_telefone">(xx) xxxxx-xxxx</string>
     <string name="hint_hora">xx:xx</string>
     <string name="hint_data">xx/xx/xxxx</string>

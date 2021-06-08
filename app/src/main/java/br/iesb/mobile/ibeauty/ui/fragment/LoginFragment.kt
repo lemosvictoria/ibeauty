@@ -35,19 +35,19 @@ class LoginFragment : Fragment() {
         //Bt Voltar
         btVoltarTela.setOnClickListener {
             activity?.supportFragmentManager
-                    ?.beginTransaction()
-                    ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento de login")
-                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    ?.commit()
+                ?.beginTransaction()
+                ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento de login")
+                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.commit()
         }
 
         //Bt redefinir senha
         tvEsqueceuSenha.setOnClickListener {
             activity?.supportFragmentManager
-                    ?.beginTransaction()
-                    ?.replace(R.id.fundoLogin, ForgotFragment(), "Fragmento de login")
-                    ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                    ?.commit()
+                ?.beginTransaction()
+                ?.replace(R.id.fundoLogin, ForgotFragment(), "Fragmento de login")
+                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.commit()
         }
 
         //Autentica Firebase
@@ -58,11 +58,12 @@ class LoginFragment : Fragment() {
 
             val taskDeLogin = auth.signInWithEmailAndPassword(email, password)
             taskDeLogin.addOnCompleteListener { resultado ->
-                if (resultado.isSuccessful){
+                if (resultado.isSuccessful) {
                     val intencaoDeChamada = Intent(activity, AppActivity::class.java)
                     activity?.startActivity(intencaoDeChamada)
-                }else{
-                    Toast.makeText(activity,"E-mail e/ou Senha Incorretos!", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(activity, "E-mail e/ou Senha Incorretos!", Toast.LENGTH_LONG)
+                        .show()
                 }
             }
         }

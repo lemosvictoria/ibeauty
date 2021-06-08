@@ -21,9 +21,11 @@ class PerfilClienteFragment : Fragment() {
 
     private lateinit var binding: FragmentPerfilClienteBinding
 
-    override fun onCreateView(inflater: LayoutInflater,
-                              container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         binding = FragmentPerfilClienteBinding.inflate(inflater, container, false)
         binding.perfil = this
         binding.lifecycleOwner = this
@@ -34,6 +36,7 @@ class PerfilClienteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         btLogout.setOnClickListener {
             signOut()
             val intencaoDeChamada = Intent(activity, LoginActivity::class.java)
@@ -43,12 +46,6 @@ class PerfilClienteFragment : Fragment() {
 
     private fun signOut() {
         Firebase.auth.signOut()
-
-        activity?.supportFragmentManager
-                ?.beginTransaction()
-                ?.replace(R.id.fundoApp, LoginFragment(), "Fragmento de logout")
-                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                ?.commit()
     }
 
 }
