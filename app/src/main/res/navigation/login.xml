@@ -61,38 +61,35 @@
         tools:layout="@layout/fragment_tipo_cadastro">
 
         <action
-            android:id="@+id/action_tipoCadastroFragment_to_cadastroClienteUmFragment"
-            app:destination="@id/cadastroClienteUmFragment"/>
-
-        <action
             android:id="@+id/action_tipoCadastroFragment_to_cadastroProfissionalUmFragment"
             app:destination="@id/cadastroProfissionalUmFragment"/>
 
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment"/>
+        <action
+            android:id="@+id/action_tipoCadastroFragment_to_cadastroClienteDoisFragment"
+            app:destination="@id/cadastroClienteDoisFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/cadastroClienteUmFragment"
-        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroClienteUmFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroClienteDoisFragment"
         android:label="fragment_cadastro_cliente_um"
-        tools:layout="@layout/fragment_cadastro_cliente_um">
-
+        tools:layout="@layout/fragment_cadastro_cliente_dois">
         <action
-            android:id="@+id/action_cadastroClienteUmFragment_to_cadastroClienteDoisFragment"
-            app:destination="@id/cadastroClienteDoisFragment"/>
-
+            android:id="@+id/action_cadastroClienteUmFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/cadastroClienteDoisFragment"
-        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroClienteDoisFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.CadastroClienteFragment"
         android:label="fragment_cadastro_cliente_dois"
-        tools:layout="@layout/fragment_cadastro_cliente_dois">
+        tools:layout="@layout/fragment_cadastro_cliente">
         <action
-            android:id="@+id/action_cadastroClienteDoisFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_cadastroClienteDoisFragment_to_cadastroClienteUmFragment"
+            app:destination="@id/cadastroClienteUmFragment" />
     </fragment>
 
     <fragment

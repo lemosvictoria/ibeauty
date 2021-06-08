@@ -21,7 +21,6 @@ class BuscaAdapter(
     class BuscaViewHolder(item: View) : RecyclerView.ViewHolder(item) {
         val logo: ImageView = item.logo_busca
         val loja: TextView = item.loja_busca
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BuscaViewHolder {
@@ -30,9 +29,9 @@ class BuscaAdapter(
     }
 
     override fun onBindViewHolder(holder: BuscaViewHolder, position: Int) {
-        holder.loja.text = listaFiltrada[position].nome
+        holder.loja.text = listaFiltrada[position].nomeEstabelecimento
 
-        val byteArray = Base64.decode(listaFiltrada[position].logo, Base64.DEFAULT)
+        val byteArray = Base64.decode(listaFiltrada[position].logoEstabelecimento, Base64.DEFAULT)
         val image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.size)
         holder.logo.setImageBitmap(image)
     }
@@ -53,7 +52,7 @@ class BuscaAdapter(
                     val resultados = ArrayList<Estabelecimento>()
 
                     for (elemento in lista) {
-                        if (elemento.nome.contains(texto)) {
+                        if (elemento.nomeEstabelecimento.contains(texto)) {
                             resultados.add(elemento)
                         }
 
@@ -73,7 +72,6 @@ class BuscaAdapter(
                     notifyDataSetChanged()
                 }
             }
-
         }
     }
 }

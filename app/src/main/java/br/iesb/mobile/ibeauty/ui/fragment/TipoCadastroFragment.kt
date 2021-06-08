@@ -45,6 +45,7 @@ class TipoCadastroFragment : Fragment() {
                     "Fragmento de tipo de cadastro"
                 )
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 
@@ -53,10 +54,11 @@ class TipoCadastroFragment : Fragment() {
                 ?.beginTransaction()
                 ?.replace(
                     R.id.fundoLogin,
-                    CadastroClienteUmFragment(),
+                    CadastroClienteFragment(),
                     "Fragmento de tipo de cadastro"
                 )
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 
@@ -69,6 +71,7 @@ class TipoCadastroFragment : Fragment() {
                     "Fragmento de tipo de cadastro"
                 )
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
     }
