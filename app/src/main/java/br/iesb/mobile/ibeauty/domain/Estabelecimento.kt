@@ -15,7 +15,6 @@ data class Estabelecimento(
     var facebookEstabelecimento: String,
     var servicosEstabelecimento: List<Servico>,
     var emailEstabelecimento: String,
-    var fotosTrabalhosEstabelecimento: String,
     var descricaoEstabelecimento: String,
     var domicilioEstabelecimento: Boolean
 )
