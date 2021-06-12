@@ -70,6 +70,7 @@
                 android:backgroundTint="#3C3F41"
                 android:ems="10"
                 android:hint="@string/nome_completo_cliente"
+                android:theme="@style/SelectionColor"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +87,7 @@
                 android:ems="10"
                 android:hint="@string/endereco"
                 android:inputType="textPostalAddress"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvNome" />
@@ -101,6 +103,7 @@
                 android:ems="10"
                 android:hint="@string/cep"
                 android:inputType="number"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvEndereco" />
@@ -116,6 +119,7 @@
                 android:ems="10"
                 android:hint="@string/data_nascimento"
                 android:inputType="date"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCep" />
@@ -131,6 +135,7 @@
                 android:ems="10"
                 android:hint="@string/telefone"
                 android:inputType="phone"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvDataDeNascimento" />

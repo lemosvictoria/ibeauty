@@ -1,4 +1,4 @@
-package br.iesb.mobile.ibeauty.ui.fragment
+ package br.iesb.mobile.ibeauty.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

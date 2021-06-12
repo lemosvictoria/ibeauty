@@ -5,5 +5,5 @@ data class Agendamento (
     val data: String,
     val hora: String,
     val telefoneCliente: Cliente,
-    val meioAtendimento: Int
+    val meioAtendimento: Boolean
 )

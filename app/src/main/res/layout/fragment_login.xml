@@ -72,6 +72,7 @@
                 android:ems="10"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.523"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +89,7 @@
                 android:ems="10"
                 android:hint="@string/senha"
                 android:inputType="textPassword"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
