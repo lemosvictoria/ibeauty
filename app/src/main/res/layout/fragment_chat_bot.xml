@@ -59,11 +59,12 @@
             android:layout_marginTop="10dp"
             android:minHeight="48dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/messageRecyclerView">
+            app:layout_constraintTop_toBottomOf="@+id/messageRecyclerView"
+            android:layout_marginBottom="70dp">
 
             <EditText
                 android:id="@+id/textChatbot"
@@ -87,7 +88,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="7dp"
                 android:background="@color/rose"
-                app:srcCompat="@drawable/input_msg" />
+                app:srcCompat="@android:drawable/ic_menu_send" />
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
