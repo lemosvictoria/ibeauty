@@ -1,7 +1,8 @@
 package br.iesb.mobile.ibeauty.domain
 
 data class Servico(
-    var nome: String
+    var nome: String,
+    var preco: String
 )
 
 data class Estabelecimento(

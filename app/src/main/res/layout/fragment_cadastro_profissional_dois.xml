@@ -48,6 +48,7 @@
                 android:ems="10"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCadastroProfissional2" />
@@ -63,6 +64,7 @@
                 android:ems="10"
                 android:hint="@string/senha"
                 android:inputType="textPassword"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/etEmail" />
@@ -78,6 +80,7 @@
                 android:ems="10"
                 android:hint="@string/confirma_senha"
                 android:inputType="textPassword"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/etPassword" />

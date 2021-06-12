@@ -71,6 +71,7 @@
                 android:ems="10"
                 android:hint="@string/endereco"
                 android:inputType="textPostalAddress"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.373"
                 app:layout_constraintStart_toStartOf="parent"
@@ -87,6 +88,7 @@
                 android:ems="10"
                 android:hint="@string/nome_estabelecimento"
                 android:inputType="textPersonName"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCadastroProfissional" />
@@ -102,6 +104,7 @@
                 android:ems="10"
                 android:hint="@string/cep"
                 android:inputType="number"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvEnderecoSalao" />
@@ -117,6 +120,7 @@
                 android:ems="10"
                 android:hint="@string/telefone_estabelecimento"
                 android:inputType="phone"
+                android:theme="@style/SelectionColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCepSalao" />
