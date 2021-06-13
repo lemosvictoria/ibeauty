@@ -125,7 +125,7 @@ Pronto! Você já pode desfrutar das funcionalidades do iBeauty!
 <br><br>
 
 ## .: PROFESSOR RESPONSÁVEL :.
-<p align="justify"> :tophat: <a href="https://github.com/Geovascordeiro"> Kenniston </a> </p>
+<p align="justify"> :tophat: <a href="https://github.com/kenniston"> Kenniston </a> </p>
 
 
 ## .: DESENVOLVEDORAS :.
