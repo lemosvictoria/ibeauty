@@ -1,21 +1,16 @@
 package br.iesb.mobile.ibeauty.domain
 
-data class Servico(
-    var nome: String,
-    var preco: String
-)
-
 data class Estabelecimento(
-    var logoEstabelecimento: String,
-    var latitudeEstabelecimento: Double,
-    var longitudeEstabelecimento: Double,
-    var cidadeEstabelecimento: String,
-    var nomeEstabelecimento: String,
-    var telefoneEstabelecimento: String,
-    var instagramEstabelecimento: String,
-    var facebookEstabelecimento: String,
-    var servicosEstabelecimento: List<Servico>,
-    var emailEstabelecimento: String,
-    var descricaoEstabelecimento: String,
-    var domicilioEstabelecimento: Boolean
+    var logoEstabelecimento: String? = null,
+    var latitudeEstabelecimento: String? = null,
+    var longitudeEstabelecimento: String? = null,
+    var cidadeEstabelecimento: String? = null,
+    var nomeEstabelecimento: String? = null,
+    var telefoneEstabelecimento: String? = null,
+    var instagramEstabelecimento: String? = null,
+    var facebookEstabelecimento: String? = null,
+    var servicosEstabelecimento: List<String>? = null,
+    var emailEstabelecimento: String? = null,
+    var descricaoEstabelecimento: String? = null,
+    var domicilioEstabelecimento: Boolean? = null
 )
