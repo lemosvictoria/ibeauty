@@ -1,9 +1,5 @@
 package br.iesb.mobile.ibeauty.ui.adapter
 
-import android.graphics.BitmapFactory
-import android.icu.number.NumberFormatter.with
-import android.icu.number.NumberRangeFormatter.with
-import android.util.Base64
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

@@ -1,25 +1,17 @@
 package br.iesb.mobile.ibeauty.ui.fragment
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.FragmentTransaction
-import br.iesb.mobile.ibeauty.R
-import br.iesb.mobile.ibeauty.databinding.FragmentHomeBinding
 import br.iesb.mobile.ibeauty.databinding.FragmentPerfilClienteBinding
 import br.iesb.mobile.ibeauty.domain.Cliente
-import br.iesb.mobile.ibeauty.ui.activity.AppActivity
 import br.iesb.mobile.ibeauty.ui.activity.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
-import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_perfil_cliente.*
 

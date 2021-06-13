@@ -6,25 +6,26 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="66dp">
+        android:layout_height="90dp">
 
         <TextView
             android:id="@+id/nomeEstab"
             android:layout_width="300dp"
             android:layout_height="24dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="8dp"
             android:text="Nome Estabelecimento"
+            app:layout_constraintBottom_toTopOf="@+id/cidadeEstab"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgEstab"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/imgEstab" />
 
         <ImageView
             android:id="@+id/imgEstab"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -32,15 +33,13 @@
 
         <TextView
             android:id="@+id/cidadeEstab"
-            android:layout_width="296dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="300dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
             android:text="Cidade Estabelecimento"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imgEstab"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgEstab"
-            app:layout_constraintTop_toBottomOf="@+id/nomeEstab" />
+            app:layout_constraintStart_toEndOf="@+id/imgEstab" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
