@@ -6,15 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.iesb.mobile.ibeauty.databinding.FragmentBuscaBinding
 import br.iesb.mobile.ibeauty.ui.adapter.BuscaAdapter
+import br.iesb.mobile.ibeauty.viewmodel.BuscaViewModel
 import kotlinx.android.synthetic.main.fragment_busca.*
+import java.security.acl.Owner
 
 
 class BuscaFragment : Fragment() {
     lateinit var adapter: BuscaAdapter
     private lateinit var binding: FragmentBuscaBinding
+
+    private val viewmodel: BuscaViewModel by lazy {
+        ViewModelProvider(this).get(BuscaViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +40,14 @@ class BuscaFragment : Fragment() {
         adapter = BuscaAdapter(mutableListOf(), mutableListOf())
         lista_estabelecimentos.layoutManager = LinearLayoutManager(activity?.applicationContext)
         lista_estabelecimentos.adapter = adapter
-//      TODO("Trazer informações dos estabelecimentos no firebase")
+
+        viewmodel.estabelecimentos.observe(viewLifecycleOwner, Observer { estab ->
+            adapter.lista = estab
+            adapter.listaFiltrada = estab
+            adapter.notifyDataSetChanged()
+        })
+
+        viewmodel.estabelecimento()
 
         pesquisarEstabelecimento.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
