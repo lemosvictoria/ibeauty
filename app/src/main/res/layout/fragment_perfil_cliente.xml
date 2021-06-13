@@ -105,7 +105,7 @@
             android:id="@+id/btLogout"
             style="?botaoRose"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="56dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"

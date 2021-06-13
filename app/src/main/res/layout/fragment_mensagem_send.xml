@@ -18,6 +18,8 @@
             android:padding="15dp"
             android:text="@string/mensagem"
             android:textColor="@color/black"
+            android:linksClickable="true"
+            android:autoLink="web"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

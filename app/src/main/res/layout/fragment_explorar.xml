@@ -33,7 +33,7 @@
                     android:layout_height="match_parent"
                     tools:context=".ui.fragment.ExplorarFragment">
 
-                    <Button
+                    <!-- <Button
                         android:id="@+id/btAgendamento"
                         style="?botaoMarromEscuro"
                         android:layout_width="0dp"
@@ -49,19 +49,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivEstetica"
-                        tools:ignore="MissingConstraints" />
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/constraintLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginBottom="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ivEstetica">
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        tools:ignore="MissingConstraints" /> -->
 
                     <ImageView
                         android:id="@+id/ivCabeloFem1"
@@ -249,6 +237,8 @@
                         android:layout_width="175dp"
                         android:layout_height="165dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="70dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/ivUnha2"

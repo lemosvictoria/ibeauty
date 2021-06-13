@@ -1,7 +1,7 @@
 package br.iesb.mobile.ibeauty.interactor
 
 import android.content.Context
-import br.iesb.mobile.ibeauty.data_class.DialogflowRequest
+import br.iesb.mobile.ibeauty.domain.DialogflowRequest
 import br.iesb.mobile.ibeauty.repository.ChatbotRepository
 
 class ChatbotInteractor (context: Context) {

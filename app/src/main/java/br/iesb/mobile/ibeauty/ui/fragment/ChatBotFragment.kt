@@ -39,7 +39,7 @@ class ChatBotFragment : Fragment() {
         inputText = textChatbot
         adapter = MessageAdapter(requireActivity().applicationContext)
         initRecyclerView()
-        adapter.addMessage("Olá, eu sou a assistente do Ibeauty ! Aqui eu consigo te ajudar em diversos assuntos como: Unhas, cabelos, maquiagem, spa, depilação e barbearia. Como posso te ajudar ?","chat")
+        adapter.addMessage("Olá, eu sou a assistente do iBeauty! Aqui eu consigo te ajudar em diversos assuntos, como: Unhas, cabelos, maquiagem, spa, depilação e barbearia. Como posso te ajudar?","chat")
         send.setOnClickListener { sendText() }
     }
     private fun initRecyclerView() {

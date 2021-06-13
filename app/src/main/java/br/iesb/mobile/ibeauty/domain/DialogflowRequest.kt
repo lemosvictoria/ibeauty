@@ -1,4 +1,4 @@
-package br.iesb.mobile.ibeauty.data_class
+package br.iesb.mobile.ibeauty.domain
 
 class DialogflowRequest (
     val text: String,

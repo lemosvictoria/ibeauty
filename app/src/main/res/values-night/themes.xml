@@ -2,24 +2,28 @@
     <!-- Base application theme. -->
     <style name="Theme.Ibeauty" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/amarelo</item>
+        <item name="colorPrimary">@color/marrom1</item>
         <item name="colorPrimaryVariant">@color/marrom2</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/bege</item>
+        <item name="colorSecondary">@color/begeSecondary</item>
         <item name="colorSecondaryVariant">@color/rose</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="botaoAmarelo">@style/Widget.MaterialComponents.Button.botaoPreto</item>
+        <item name="botaoMarromClaro">@style/Widget.MaterialComponents.Button.botaoBranco</item>
+        <item name="botaoRose">@style/Widget.MaterialComponents.Button.botaoBranco</item>
+        <item name="botaoMarromEscuro">@style/Widget.MaterialComponents.Button.botaoPreto</item>
     </style>
 
-    <!-- <style name="DarkActionBar">
+    <style name="DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" /> -->
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
 </resources>
