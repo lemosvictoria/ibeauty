@@ -2,7 +2,7 @@ package br.iesb.mobile.ibeauty.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import br.iesb.mobile.ibeauty.data_class.DialogflowRequest
+import br.iesb.mobile.ibeauty.domain.DialogflowRequest
 import br.iesb.mobile.ibeauty.interactor.ChatbotInteractor
 
 class ChatBotViewModel (private val app: Application) : AndroidViewModel(app) {

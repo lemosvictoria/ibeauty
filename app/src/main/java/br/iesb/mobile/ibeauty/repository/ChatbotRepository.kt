@@ -1,7 +1,7 @@
 package br.iesb.mobile.ibeauty.repository
 
 import android.content.Context
-import br.iesb.mobile.ibeauty.data_class.DialogflowRequest
+import br.iesb.mobile.ibeauty.domain.DialogflowRequest
 import br.iesb.mobile.ibeauty.repository.dto.ChatbotDTO
 import retrofit2.Call
 import retrofit2.Callback

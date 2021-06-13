@@ -16,7 +16,6 @@
         <item name="botaoRose">@style/Widget.MaterialComponents.Button.botaoRose</item>
         <item name="botaoMarromClaro">@style/Widget.MaterialComponents.Button.botaoMarromClaro</item>
         <item name="botaoMarromEscuro">@style/Widget.MaterialComponents.Button.botaoMarromEscuro</item>
-
     </style>
 
     <style name="NoActionBar">
@@ -27,6 +26,4 @@
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    
-
 </resources>

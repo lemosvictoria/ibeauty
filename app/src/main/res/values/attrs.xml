@@ -4,4 +4,12 @@
     <attr name="botaoRose" format="reference"/>
     <attr name="botaoMarromClaro" format="reference"/>
     <attr name="botaoMarromEscuro" format="reference"/>
+
+    <attr name="botaoAmareloDark" format="reference"/>
+    <attr name="botaoRoseDark" format="reference"/>
+    <attr name="botaoMarromClaroDark" format="reference"/>
+    <attr name="botaoMarromEscuroDark" format="reference"/>
+    <attr name="botaoBranco" format="reference"/>
+    <attr name="botaoPreto" format="reference"/>
+
 </resources>
