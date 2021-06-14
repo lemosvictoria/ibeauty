@@ -117,7 +117,7 @@ Pronto! Você já pode desfrutar das funcionalidades do iBeauty!
 <br><br>
 
 ## .: DOCUMENTAÇÃO :.
-<p align="justify"> :diamond_shape_with_a_dot_inside: <a href="https://github.com/lemosvictoria/ibeauty/blob/master/artigo%20ibeauty%20v3.pdf"> Artigo do projeto </a> </p>
+<p align="justify"> :diamond_shape_with_a_dot_inside: <a href="https://github.com/lemosvictoria/ibeauty/blob/master/artigo%20ibeauty%20versao%20final.pdf"> Artigo do projeto </a> </p>
 <p align="justify"> :diamond_shape_with_a_dot_inside: <a href="https://www.figma.com/proto/RYGD3zEvEmQtmJ3JrI4ro0/Prototyping-in-Figma?node-id=0%3A2&scaling=scale-down&page-id=0%3A1"> Protótipo do aplicativo iBeauty </a> </p>
 
 <p align="justify"><b> :warning: &nbsp;&nbsp; Observação:</b> Para acessar o artigo do projeto, o leitor deve estar logado em uma conta com domínio do IESB.</b></p>
