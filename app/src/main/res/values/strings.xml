@@ -72,4 +72,6 @@
     <string name="hint_telefone">(xx) xxxxx-xxxx</string>
     <string name="hint_hora">xx:xx</string>
     <string name="hint_data">xx/xx/xxxx</string>
+    <string name="sobre_nos">Sobre Nós</string>
+    <string name="fotos_estab">Veja o nosso trabalho!</string>
 </resources>

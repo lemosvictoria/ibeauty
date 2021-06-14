@@ -10,6 +10,7 @@ import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentTipoCadastroBinding
 import kotlinx.android.synthetic.main.fragment_tipo_cadastro.*
 
+
 class TipoCadastroFragment : Fragment() {
 
     private lateinit var binding: FragmentTipoCadastroBinding

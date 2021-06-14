@@ -21,6 +21,7 @@ class PerfilClienteFragment : Fragment() {
     private lateinit var binding: FragmentPerfilClienteBinding
 
     var database = FirebaseDatabase.getInstance()
+    val auth = FirebaseAuth.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,11 +48,10 @@ class PerfilClienteFragment : Fragment() {
     }
 
     private fun signOut() {
-        Firebase.auth.signOut()
+        auth.signOut()
     }
 
     private fun getClient() {
-        val auth = FirebaseAuth.getInstance()
         val uid = auth.uid
 
         val query = database.getReference("clientes")
