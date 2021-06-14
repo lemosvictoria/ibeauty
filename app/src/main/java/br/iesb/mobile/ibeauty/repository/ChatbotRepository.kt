@@ -39,7 +39,6 @@ class ChatbotRepository (context: Context, url: String) : RetrofitInit(context, 
                     }
                 }
             }
-
         })
     }
 }

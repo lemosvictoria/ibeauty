@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentPerfilEstabelecimentoBinding
-import kotlinx.android.synthetic.main.fragment_main.*
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_perfil_estabelecimento.*
+
 
 class PerfilEstabelecimentoFragment : Fragment() {
 
     private lateinit var binding: FragmentPerfilEstabelecimentoBinding
+    var database = FirebaseDatabase.getInstance()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -52,7 +54,5 @@ class PerfilEstabelecimentoFragment : Fragment() {
                 ?.addToBackStack(null)
                 ?.commit()
         }
-
     }
-
 }

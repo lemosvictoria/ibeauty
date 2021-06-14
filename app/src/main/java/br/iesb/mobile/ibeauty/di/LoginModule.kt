@@ -17,28 +17,4 @@ class LoginModule {
 
     @Provides
     fun firebaseAuthProvider() = Firebase.auth
-
-    fun verifyLogin(callback: (Boolean) -> Unit) {
-        auth.addAuthStateListener { v ->
-            if (v.currentUser == null) {
-//                this.verifyLogin { resultado ->
-//                    if(resultado){
-//                        val intencaoDeChamada = Intent(activity, AppActivity::class.java)
-//                        activity?.startActivity(intencaoDeChamada)
-//                    }
-//
-//                    else {
-//                        activity?.supportFragmentManager
-//                                ?.beginTransaction()
-//                                ?.replace(R.id.fundoApp, LoginFragment(), "Fragmento verificação")
-//                                ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-//                                ?.commit()
-//                    }
-//                }
-                callback(false)
-            } else {
-                callback(true)
-            }
-        }
-    }
 }

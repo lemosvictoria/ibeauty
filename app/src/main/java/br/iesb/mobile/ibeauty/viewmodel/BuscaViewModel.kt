@@ -10,7 +10,6 @@ class BuscaViewModel (private val app:Application):AndroidViewModel (app){
     private val interactor = BuscaInteractor (app.applicationContext)
     val estabelecimentos = MutableLiveData<MutableList <Estabelecimento>>()
 
-
     fun estabelecimento (){
         interactor.estabelecimento { arrayestabelecimento ->
             val novalista = mutableListOf<Estabelecimento>()

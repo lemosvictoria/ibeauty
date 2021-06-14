@@ -123,9 +123,7 @@ class CadastroClienteDoisFragment : Fragment() {
                     dataNascCliente,
                 )
 
-            reference.setValue(cliente)
-
-            .addOnCompleteListener { resultado ->
+            reference.setValue(cliente).addOnCompleteListener { resultado ->
                 if (resultado.isSuccessful) {
                     activity?.supportFragmentManager
                         ?.beginTransaction()

@@ -13,10 +13,10 @@ import br.iesb.mobile.ibeauty.databinding.FragmentBuscaBinding
 import br.iesb.mobile.ibeauty.ui.adapter.BuscaAdapter
 import br.iesb.mobile.ibeauty.viewmodel.BuscaViewModel
 import kotlinx.android.synthetic.main.fragment_busca.*
-import java.security.acl.Owner
 
 
 class BuscaFragment : Fragment() {
+
     lateinit var adapter: BuscaAdapter
     private lateinit var binding: FragmentBuscaBinding
 
@@ -58,8 +58,6 @@ class BuscaFragment : Fragment() {
                 adapter.filter.filter(newText)
                 return true
             }
-
         })
     }
-
 }
