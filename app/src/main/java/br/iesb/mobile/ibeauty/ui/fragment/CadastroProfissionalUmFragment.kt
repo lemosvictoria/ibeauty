@@ -17,7 +17,7 @@ class CadastroProfissionalUmFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCadastroProfissionalUmBinding.inflate(inflater, container, false)
         binding.cadastroProfissionalUm = this
         binding.lifecycleOwner = this

@@ -11,5 +11,6 @@
     <attr name="botaoMarromEscuroDark" format="reference"/>
     <attr name="botaoBranco" format="reference"/>
     <attr name="botaoPreto" format="reference"/>
+    <attr name="botaoCinza" format="reference"/>
 
 </resources>

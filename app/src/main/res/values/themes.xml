@@ -16,6 +16,7 @@
         <item name="botaoRose">@style/Widget.MaterialComponents.Button.botaoRose</item>
         <item name="botaoMarromClaro">@style/Widget.MaterialComponents.Button.botaoMarromClaro</item>
         <item name="botaoMarromEscuro">@style/Widget.MaterialComponents.Button.botaoMarromEscuro</item>
+        <item name="botaoCinza">@style/Widget.MaterialComponents.Button.botaoCinza</item>
     </style>
 
     <style name="NoActionBar">

@@ -8,15 +8,16 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
 import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentPerfilEstabelecimentoBinding
-import kotlinx.android.synthetic.main.fragment_main.*
+import br.iesb.mobile.ibeauty.domain.Estabelecimento
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_perfil_estabelecimento.*
 
-class PerfilEstabelecimentoFragment : Fragment() {
+class PerfilEstabelecimentoFragment(private val estabelecimento: Estabelecimento) : Fragment() {
 
     private lateinit var binding: FragmentPerfilEstabelecimentoBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         binding = FragmentPerfilEstabelecimentoBinding.inflate(inflater, container, false)
         binding.estabelecimento = this
         binding.lifecycleOwner = this
@@ -27,10 +28,15 @@ class PerfilEstabelecimentoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Picasso.get().load(estabelecimento.logoEstabelecimento).into(ivEstabelecimento)
+        tvNomeEstab.text = estabelecimento.nomeEstabelecimento
+        tvLocalidade.text = estabelecimento.cidadeEstabelecimento
+        tvDescricao.text = estabelecimento.descricaoEstabelecimento
+
         btContatos.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
-                ?.replace(R.id.fundoApp, ContatoEstabelecimentoFragment(), "Fragmento perfil estabelecimento")
+                ?.replace(R.id.fundoApp, ContatoEstabelecimentoFragment(estabelecimento), "Fragmento perfil estabelecimento")
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 ?.addToBackStack(null)
                 ?.commit()
@@ -39,7 +45,7 @@ class PerfilEstabelecimentoFragment : Fragment() {
         btLocalizacao.setOnClickListener {
             activity?.supportFragmentManager
                 ?.beginTransaction()
-                ?.replace(R.id.fundoApp, LocalizacaoEstabelecimentoFragment(), "Fragmento perfil estabelecimento")
+                ?.replace(R.id.fundoApp, LocalizacaoEstabelecimentoFragment(estabelecimento), "Fragmento perfil estabelecimento")
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 ?.addToBackStack(null)
                 ?.commit()
@@ -52,7 +58,5 @@ class PerfilEstabelecimentoFragment : Fragment() {
                 ?.addToBackStack(null)
                 ?.commit()
         }
-
     }
-
 }

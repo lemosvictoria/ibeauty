@@ -13,7 +13,6 @@ import br.iesb.mobile.ibeauty.databinding.FragmentBuscaBinding
 import br.iesb.mobile.ibeauty.ui.adapter.BuscaAdapter
 import br.iesb.mobile.ibeauty.viewmodel.BuscaViewModel
 import kotlinx.android.synthetic.main.fragment_busca.*
-import java.security.acl.Owner
 
 
 class BuscaFragment : Fragment() {
@@ -27,7 +26,7 @@ class BuscaFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentBuscaBinding.inflate(inflater, container, false)
         binding.busca = this
         binding.lifecycleOwner = this
@@ -37,7 +36,7 @@ class BuscaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter = BuscaAdapter(mutableListOf(), mutableListOf())
+        adapter = BuscaAdapter(mutableListOf(), activity, mutableListOf())
         lista_estabelecimentos.layoutManager = LinearLayoutManager(activity?.applicationContext)
         lista_estabelecimentos.adapter = adapter
 

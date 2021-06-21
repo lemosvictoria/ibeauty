@@ -26,13 +26,8 @@ class BuscaRepository (context:Context){
             }
 
             override fun onCancelled(error: DatabaseError) {
-
             }
-
         })
-
     }
-
-
 }
 

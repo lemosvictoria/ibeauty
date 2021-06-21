@@ -41,11 +41,12 @@
     <string name="ver_mais">Ver mais</string>
     <string name="bt_sair">Sair</string>
     <string name="saber_mais">Quer saber mais? Entre em contato conosco!</string>
-    <string name="txt_contatos">Não conseguiu marcar um horário através do aplicativo? Entre em contato conosco, venha conhecer o nosso espaço!</string>
+    <string name="txt_contatos">Não conseguiu solicitar um horário através do aplicativo? Entre em contato conosco, venha conhecer o nosso espaço!</string>
     <string name="nome_completo_cliente">Nome completo</string>
     <string name="nome_estabelecimento">Nome do estabelecimento</string>
     <string name="redefine_senha">Esqueceu sua senha? Clique aqui para redefini-la!</string>
-    <string name="agradece_solicitacao">Agradecemos a sua solicitação! Em breve, um de nossos funcionários irá entrar em contato com você, para confirmar o seu horário!</string>
+    <string name="agradece_solicitacao">Agradecemos a sua solicitação!</string>
+    <string name="agradece_solicitacao_dois">Em breve, um de nossos atendentes entrará em contato, para confirmar a sua solicitação!</string>
     <string name="titulo_insere_dados_estabelecimento">Insira os dados do estabelecimento:</string>
     <string name="titulo_insere_dados_pessoais">Insira seus dados pessoais:</string>
     <string name="titulo_redefine_senha">Redefinição de senha:</string>
@@ -59,7 +60,8 @@
     <string name="titulo_agendamento">AGENDAMENTO</string>
     <string name="mensagem">hi</string>
     <string name="mensagem2">Im iBeauty</string>
-    <string name="chat">ibeauty</string>
+    <string name="chat">iBeauty</string>
+    <string name="chat_dois">Você</string>
     <string name="assistente">CHAT</string>
     <string name="digite">Digite uma mensagem aqui</string>
     <string name="solicita_horario">Solicitar horário</string>
@@ -72,4 +74,6 @@
     <string name="hint_telefone">(xx) xxxxx-xxxx</string>
     <string name="hint_hora">xx:xx</string>
     <string name="hint_data">xx/xx/xxxx</string>
+    <string name="sobre_nos">Sobre Nós</string>
+    <string name="fotos_estab">Veja o nosso trabalho!</string>
 </resources>

@@ -15,7 +15,7 @@ class SolicitaProcedimentoFragment : Fragment() {
     private lateinit var binding: FragmentSolicitaProcedimentoBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                                savedInstanceState: Bundle? ): View? {
+                                savedInstanceState: Bundle? ): View {
         binding = FragmentSolicitaProcedimentoBinding.inflate(inflater, container, false)
         binding.solicitacao = this
         binding.lifecycleOwner = this

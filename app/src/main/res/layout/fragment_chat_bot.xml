@@ -56,14 +56,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="65dp"
             android:minHeight="48dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/messageRecyclerView"
-            android:layout_marginBottom="70dp">
+            app:layout_constraintTop_toBottomOf="@+id/messageRecyclerView">
 
             <EditText
                 android:id="@+id/textChatbot"

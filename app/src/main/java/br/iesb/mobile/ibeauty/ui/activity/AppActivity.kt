@@ -35,12 +35,23 @@ class AppActivity : AppCompatActivity() {
             }
             true
         }
+
+        bottom_navigation.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.btHome -> replaceFragment(HomeFragment)
+                R.id.btBusca -> replaceFragment(BuscaFragment)
+                R.id.btChat -> replaceFragment(ChatBotFragment)
+                R.id.btExplorar -> replaceFragment(ExplorarFragment)
+                R.id.btPerfil -> replaceFragment(PerfilClienteFragment)
+            }
+        }
     }
 
     private fun replaceFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction()
             .replace(R.id.fundoApp, fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+            .addToBackStack(null)
             .commit()
     }
 }

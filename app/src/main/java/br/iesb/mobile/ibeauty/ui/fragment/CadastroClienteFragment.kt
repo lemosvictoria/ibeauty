@@ -12,7 +12,6 @@ import br.iesb.mobile.ibeauty.databinding.FragmentCadastroClienteBinding
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_cadastro_cliente.*
 import kotlinx.android.synthetic.main.fragment_cadastro_cliente.btVoltarTela
-import kotlinx.android.synthetic.main.fragment_cadastro_cliente_dois.*
 
 class CadastroClienteFragment : Fragment() {
 
@@ -21,7 +20,7 @@ class CadastroClienteFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCadastroClienteBinding.inflate(inflater, container, false)
         binding.cadastroCliente = this
         binding.lifecycleOwner = this

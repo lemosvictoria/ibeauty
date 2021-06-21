@@ -40,17 +40,17 @@
 
             <Button
                 android:id="@+id/btTipoProfissional"
-                style="?botaoMarromClaro"
+                style="?botaoCinza"
                 android:layout_width="0dp"
                 android:layout_height="56dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="24dp"
                 android:text="@string/bt_profissional"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cadastro" />
+                app:layout_constraintTop_toBottomOf="@+id/btTipoCliente" />
 
             <Button
                 android:id="@+id/btTipoCliente"
@@ -58,13 +58,13 @@
                 android:layout_width="0dp"
                 android:layout_height="56dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="52dp"
                 android:layout_marginEnd="24dp"
                 android:text="@string/bt_cliente"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.492"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btTipoProfissional" />
+                app:layout_constraintTop_toBottomOf="@+id/cadastro" />
 
             <TextView
                 android:id="@+id/linkLogin"
@@ -74,7 +74,7 @@
                 android:text="@string/bt_ir_para_login"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btTipoCliente" />
+                app:layout_constraintTop_toBottomOf="@+id/btTipoProfissional" />
 
             <ImageView
                 android:id="@+id/ivLogo"

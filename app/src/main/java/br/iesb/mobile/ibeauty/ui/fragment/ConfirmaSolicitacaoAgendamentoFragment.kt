@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentConfirmaSolicitacaoAgendamentoBinding
 
 class ConfirmaSolicitacaoAgendamentoFragment : Fragment() {
@@ -15,7 +14,7 @@ class ConfirmaSolicitacaoAgendamentoFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentConfirmaSolicitacaoAgendamentoBinding.inflate(inflater, container, false)
         binding.confirmaSolicitacao = this
         binding.lifecycleOwner = this

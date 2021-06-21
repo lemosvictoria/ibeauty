@@ -10,6 +10,7 @@ import br.iesb.mobile.ibeauty.R
 import br.iesb.mobile.ibeauty.databinding.FragmentTipoCadastroBinding
 import kotlinx.android.synthetic.main.fragment_tipo_cadastro.*
 
+
 class TipoCadastroFragment : Fragment() {
 
     private lateinit var binding: FragmentTipoCadastroBinding
@@ -17,7 +18,7 @@ class TipoCadastroFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentTipoCadastroBinding.inflate(inflater, container, false)
         binding.tipoCadastro = this
         binding.lifecycleOwner = this
@@ -74,5 +75,7 @@ class TipoCadastroFragment : Fragment() {
                 ?.addToBackStack(null)
                 ?.commit()
         }
+
+        btTipoProfissional.isEnabled = false
     }
 }

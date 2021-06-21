@@ -40,10 +40,10 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/tvEstabelecimento"
+                    android:id="@+id/tvNomeEstab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="15dp"
                     android:fontFamily="@font/comfortaa"
                     android:text="Nome do Estabelecimento"
                     android:textColor="@color/black"
@@ -63,7 +63,7 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/tvEstabelecimento" />
+                    app:layout_constraintTop_toTopOf="@+id/tvNomeEstab" />
 
                 <Button
                     android:id="@+id/btSolicitaHorario"
@@ -88,7 +88,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="30dp"
                     android:fontFamily="@font/comfortaa"
                     android:text="@string/titulo_contatos"
@@ -102,7 +102,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="30dp"
                     android:fontFamily="@font/comfortaa"
                     android:text="@string/titulo_localizacao"
@@ -112,26 +112,12 @@
                     app:layout_constraintTop_toBottomOf="@+id/btContatos" />
 
                 <TextView
-                    android:id="@+id/tvChamada"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:fontFamily="@font/comfortaa"
-                    android:text="Veja o nosso trabalho!"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-                <TextView
                     android:id="@+id/tvSobreNos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
                     android:fontFamily="@font/comfortaa"
-                    android:text="Sobre Nós"
+                    android:text="@string/sobre_nos"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -140,13 +126,17 @@
                     app:layout_constraintTop_toBottomOf="@+id/btLocalizacao" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/tvDescricao"
                     android:layout_width="0dp"
-                    android:layout_height="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="70dp"
                     android:text="Descrição do Estabelecimento"
                     android:textAlignment="center"
                     android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvSobreNos">
@@ -163,55 +153,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/exemplo_logo" />
 
-                <ImageView
-                    android:id="@+id/exemplo1"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="15dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvChamada"
-                    app:srcCompat="@drawable/barba2" />
-
-                <ImageView
-                    android:id="@+id/exemplo2"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/exemplo1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
-                    app:layout_constraintTop_toTopOf="@+id/exemplo1"
-                    app:srcCompat="@drawable/cabelo_fem" />
-
-                <ImageView
-                    android:id="@+id/exemplo3"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="12dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/exemplo1"
-                    app:srcCompat="@drawable/cabelo_masc" />
-
-                <ImageView
-                    android:id="@+id/exemplo4"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/exemplo3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
-                    app:layout_constraintTop_toTopOf="@+id/exemplo3"
-                    app:srcCompat="@drawable/cabelo_curto" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/exemplo3"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
     </LinearLayout>

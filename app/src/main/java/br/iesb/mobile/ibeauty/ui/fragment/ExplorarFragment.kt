@@ -12,7 +12,7 @@ class ExplorarFragment : Fragment() {
     private lateinit var binding: FragmentExplorarBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         binding = FragmentExplorarBinding.inflate(inflater, container, false)
         binding.explorar = this
         binding.lifecycleOwner = this

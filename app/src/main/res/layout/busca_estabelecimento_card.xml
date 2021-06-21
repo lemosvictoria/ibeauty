@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardEstabelecimento"
         android:layout_width="match_parent"
         android:layout_height="90dp">
 
@@ -12,6 +13,7 @@
             android:id="@+id/nomeEstab"
             android:layout_width="300dp"
             android:layout_height="24dp"
+            android:layout_marginStart="5dp"
             android:layout_marginEnd="8dp"
             android:text="Nome Estabelecimento"
             app:layout_constraintBottom_toTopOf="@+id/cidadeEstab"
@@ -35,11 +37,22 @@
             android:id="@+id/cidadeEstab"
             android:layout_width="300dp"
             android:layout_height="24dp"
+            android:layout_marginStart="5dp"
             android:layout_marginEnd="8dp"
             android:text="Cidade Estabelecimento"
             app:layout_constraintBottom_toBottomOf="@+id/imgEstab"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgEstab" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/cidadeEstab"
+            app:layout_constraintStart_toStartOf="@+id/imgEstab" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -26,7 +26,7 @@ class ChatBotFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentChatBotBinding.inflate(inflater, container, false)
         binding.chat = this
         binding.lifecycleOwner = this

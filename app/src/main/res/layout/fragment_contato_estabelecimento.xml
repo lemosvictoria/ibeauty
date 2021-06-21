@@ -41,23 +41,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/btVoltarTela"
-                android:layout_width="0dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="10dp"
-                android:scaleType="fitStart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/voltar" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
             android:id="@+id/ivInstagram"
-            android:layout_width="66dp"
-            android:layout_height="66dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="15dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +55,7 @@
 
         <ImageView
             android:id="@+id/ivEmail"
-            android:layout_width="66dp"
+            android:layout_width="50dp"
             android:layout_height="66dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="15dp"
@@ -76,8 +65,8 @@
 
         <ImageView
             android:id="@+id/ivWhatsapp"
-            android:layout_width="66dp"
-            android:layout_height="66dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="35dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,11 +75,13 @@
 
         <ImageView
             android:id="@+id/ivFacebook"
-            android:layout_width="66dp"
-            android:layout_height="66dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="15dp"
             app:layout_constraintStart_toStartOf="parent"
+            android:clickable="true"
+            android:autoLink="web"
             app:layout_constraintTop_toBottomOf="@+id/ivInstagram"
             app:srcCompat="@drawable/facebook" />
 
@@ -98,16 +89,74 @@
             android:id="@+id/tvContatos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
             android:fontFamily="@font/comfortaa"
             android:text="@string/txt_contatos"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivEmail" />
+
+        <TextView
+            android:id="@+id/tvTelefoneEstab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="TextView"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivWhatsapp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivWhatsapp"
+            app:layout_constraintTop_toTopOf="@+id/ivWhatsapp" />
+
+        <TextView
+            android:id="@+id/tvInstagramEstab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="TextView"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivInstagram"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivInstagram"
+            app:layout_constraintTop_toTopOf="@+id/ivInstagram" />
+
+        <TextView
+            android:id="@+id/tvFacebookEstab"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="TextView"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFacebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFacebook"
+            app:layout_constraintTop_toTopOf="@+id/ivFacebook"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvEmailEstab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="TextView"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivEmail"
+            app:layout_constraintTop_toTopOf="@+id/ivEmail" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

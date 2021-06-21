@@ -29,7 +29,7 @@ class CadastroClienteDoisFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = FragmentCadastroClienteDoisBinding.inflate(inflater, container, false)
         binding.cadastroClienteDois = this
@@ -123,9 +123,7 @@ class CadastroClienteDoisFragment : Fragment() {
                     dataNascCliente,
                 )
 
-            reference.setValue(cliente)
-
-            .addOnCompleteListener { resultado ->
+            reference.setValue(cliente).addOnCompleteListener { resultado ->
                 if (resultado.isSuccessful) {
                     activity?.supportFragmentManager
                         ?.beginTransaction()

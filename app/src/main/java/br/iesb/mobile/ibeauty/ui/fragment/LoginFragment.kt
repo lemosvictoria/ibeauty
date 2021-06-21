@@ -21,7 +21,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
         binding.login = this
         binding.lifecycleOwner = this
@@ -38,6 +38,7 @@ class LoginFragment : Fragment() {
                 ?.beginTransaction()
                 ?.replace(R.id.fundoLogin, MainFragment(), "Fragmento de login")
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 
@@ -47,6 +48,7 @@ class LoginFragment : Fragment() {
                 ?.beginTransaction()
                 ?.replace(R.id.fundoLogin, ForgotFragment(), "Fragmento de login")
                 ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                ?.addToBackStack(null)
                 ?.commit()
         }
 

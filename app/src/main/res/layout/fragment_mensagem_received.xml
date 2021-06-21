@@ -8,7 +8,7 @@
         android:paddingTop="8dp">
 
         <TextView
-            android:id="@+id/geo"
+            android:id="@+id/ibeauty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -25,15 +25,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:autoLink="web"
             android:background="@drawable/received_text"
             android:elevation="5dp"
+            android:linksClickable="true"
             android:maxWidth="240dp"
             android:padding="15dp"
             android:text="@string/mensagem2"
             android:textColor="@color/black"
-            android:linksClickable="true"
-            android:autoLink="web"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/geo" />
+            app:layout_constraintTop_toBottomOf="@+id/ibeauty" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -8,5 +8,84 @@
         android:id="@+id/homeFragment"
         android:name="br.iesb.mobile.ibeauty.ui.fragment.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_explorarFragment"
+            app:destination="@id/explorarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatBotFragment"
+            app:destination="@id/chatBotFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_buscaFragment"
+            app:destination="@id/buscaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_perfilClienteFragment"
+            app:destination="@id/perfilClienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatBotFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.ChatBotFragment"
+        android:label="ChatBotFragment"
+        tools:layout="@layout/fragment_chat_bot"/>
+    <fragment
+        android:id="@+id/perfilClienteFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.PerfilClienteFragment"
+        android:label="PerfilClienteFragment"
+        tools:layout="@layout/fragment_perfil_cliente"/>
+    <fragment
+        android:id="@+id/buscaFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.BuscaFragment"
+        android:label="BuscaFragment"
+        tools:layout="@layout/fragment_busca">
+        <action
+            android:id="@+id/action_buscaFragment_to_perfilEstabelecimentoFragment"
+            app:destination="@id/perfilEstabelecimentoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/explorarFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.ExplorarFragment"
+        android:label="ExplorarFragment"
+        tools:layout="@layout/fragment_explorar"/>
+    <fragment
+        android:id="@+id/perfilEstabelecimentoFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.PerfilEstabelecimentoFragment"
+        android:label="PerfilEstabelecimentoFragment"
+        tools:layout="@layout/fragment_perfil_estabelecimento">
+        <action
+            android:id="@+id/action_perfilEstabelecimentoFragment_to_contatoEstabelecimentoFragment"
+            app:destination="@id/contatoEstabelecimentoFragment" />
+        <action
+            android:id="@+id/action_perfilEstabelecimentoFragment_to_solicitaProcedimentoFragment"
+            app:destination="@id/solicitaProcedimentoFragment" />
+        <action
+            android:id="@+id/action_perfilEstabelecimentoFragment_to_localizacaoEstabelecimentoFragment"
+            app:destination="@id/localizacaoEstabelecimentoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/localizacaoEstabelecimentoFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.LocalizacaoEstabelecimentoFragment"
+        android:label="LocalizacaoEstabelecimentoFragment"
+        tools:layout="@layout/fragment_localizacao_estabelecimento"/>
+    <fragment
+        android:id="@+id/contatoEstabelecimentoFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.ContatoEstabelecimentoFragment"
+        android:label="ContatoEstabelecimentoFragment"
+        tools:layout="@layout/fragment_contato_estabelecimento"/>
+    <fragment
+        android:id="@+id/solicitaProcedimentoFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.SolicitaProcedimentoFragment"
+        android:label="SolicitaProcedimentoFragment"
+        tools:layout="@layout/fragment_solicita_procedimento">
+        <action
+            android:id="@+id/action_solicitaProcedimentoFragment_to_confirmaSolicitacaoAgendamentoFragment"
+            app:destination="@id/confirmaSolicitacaoAgendamentoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmaSolicitacaoAgendamentoFragment"
+        android:name="br.iesb.mobile.ibeauty.ui.fragment.ConfirmaSolicitacaoAgendamentoFragment"
+        android:label="ConfirmaSolicitacaoAgendamentoFragment"
+        tools:layout="@layout/fragment_confirma_solicitacao_agendamento"/>
 </navigation>

@@ -10,9 +10,7 @@ import br.iesb.mobile.ibeauty.databinding.FragmentPerfilClienteBinding
 import br.iesb.mobile.ibeauty.domain.Cliente
 import br.iesb.mobile.ibeauty.ui.activity.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_perfil_cliente.*
 
 
@@ -21,12 +19,13 @@ class PerfilClienteFragment : Fragment() {
     private lateinit var binding: FragmentPerfilClienteBinding
 
     var database = FirebaseDatabase.getInstance()
+    val auth = FirebaseAuth.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentPerfilClienteBinding.inflate(inflater, container, false)
         binding.perfil = this
         binding.lifecycleOwner = this
@@ -47,11 +46,10 @@ class PerfilClienteFragment : Fragment() {
     }
 
     private fun signOut() {
-        Firebase.auth.signOut()
+        auth.signOut()
     }
 
     private fun getClient() {
-        val auth = FirebaseAuth.getInstance()
         val uid = auth.uid
 
         val query = database.getReference("clientes")

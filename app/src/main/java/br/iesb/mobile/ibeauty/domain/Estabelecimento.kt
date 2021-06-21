@@ -2,8 +2,8 @@ package br.iesb.mobile.ibeauty.domain
 
 data class Estabelecimento(
     var logoEstabelecimento: String? = null,
-    var latitudeEstabelecimento: String? = null,
-    var longitudeEstabelecimento: String? = null,
+    var latitudeEstabelecimento: Double? = null,
+    var longitudeEstabelecimento: Double? = null,
     var cidadeEstabelecimento: String? = null,
     var nomeEstabelecimento: String? = null,
     var telefoneEstabelecimento: String? = null,

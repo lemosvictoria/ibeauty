@@ -19,7 +19,7 @@ class ForgotFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentForgotBinding.inflate(inflater, container, false)
         binding.recuperaSenha = this
         binding.lifecycleOwner = this
